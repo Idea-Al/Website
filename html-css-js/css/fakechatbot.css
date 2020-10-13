@@ -1,0 +1,13 @@
+
+/*!
+Name: FakeChatBot.JS
+Dependencies: jQuery
+Author: Michael Ambass
+Author URL: http://ambass.me
+Date Created: November 12, 2016
+Licensed under the MIT license
+*/
+
+.fakechatbot-typing, .fakechatbot-message { display: none; }
+
+.fakechatbot-typing-active, .fakechatbot-message-display { display: block; }
