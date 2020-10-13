@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
     integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../src/fakechatbot.css" />
+  <link rel="stylesheet" href="../css/fakechatbot.css" />
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -56,13 +56,30 @@
   </nav>
   <header class="container  ">
     <div class="row">
-      <div class="col-sm-8 presentation">
+      <div class="col-sm-7 presentation">
 
         <h2>Lorem ipsum dolor sit amet </h2>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit error id beatae nisi nulla iusto laboriosam dolorum perferendis vel!</p>
       </div>
-      <div class="col-sm-4 fake_conv putmehere ">
+      <div class="col-sm-5 fake_conv  ">
+
+        <div class="container animed_conv">
+          <div class="card card-inverse card-primary">
+            <div class="card-block">
+              <blockquote class="card-blockquote">
+                <div id="chatbot">
+                  <div class="fakechatbot-message perso_1" data-pause="1000"><strong><i class="fa fa-user"></i> User:</strong> Hello!</div>
+                  <div class="fakechatbot-message  perso_2" data-pause="3000"><strong><i class="fa fa-android"></i> Bot:</strong> Good morning! How can I help you?</div>
+                  <div class="fakechatbot-message  perso_1" data-pause="2000"><strong><i class="fa fa-user"></i> User:</strong> Do you want to join us?</div>
+                  <div class="fakechatbot-message perso_2" data-pause="1000"><strong><i class="fa fa-android"></i> Bot:</strong> Of course, where are you?</div>
+                  <div class="fakechatbot-typing perso_2">Typing ...</div>
+                </div>
+      
+              </blockquote>
+            </div>
+          </div>
+        </div>
       </div>
   </header>
 
@@ -73,22 +90,10 @@
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script>
-  var randomphrases = ['We the people','in order to form','a more perfect union','establish justice','insure domestic tranquility','provide for the common defence, promote the general welfare','and secure the blessings of liberty','to ourselves','and our posterity','do ordain and establish this constitution','of the United States of America'];
-
-var c = 0;
-var t;
-var timer_is_on = 0;
-
-timedCount();
-
-function timedCount()
-{
- t = setTimeout( function(){ timedCount() }, 1500 );
- random = Math.floor(Math.random() * (11 - 0 + 1)) + 0;
- $('.putmehere').html( randomphrases[random]);
-
-}
-
-</script>
+  <script src="../js/fakechatbot.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#chatbot').fakechatbot();
+    });
+  </script>
   </html>

@@ -18,29 +18,28 @@ body
 }
 }
 
-
-
 #navbarSupportedContent {
 	justify-content: flex-end;
 }
 
-/*  Navbar */
+/* presentation */
 
 .presentation{
-	background-color: black;
+	
 }
 
+/* fake conv */
 .fake_conv{
-	background-color: red;
+
 }
 
 
-.putmehere {
-    width: 400px;
-    height: 50px;
-    background-color: red;
-    color:white;
-    margin-top: 20px;
-    line-height: 50px;
-    text-align: center;
+.animed_conv{
+	margin: 150px auto;
+	max-width: 100%;
+}
+
+.perso_2{
+	text-align: end;
+
 }
