@@ -1,0 +1,46 @@
+
+/* Navbar */
+@media only screen and (min-width: 960px) {
+	.hidedesktop{
+		display:none;
+	}
+	}
+
+@media only screen and (max-width: 960px){
+
+body
+{
+	background-color: blue;
+}
+.hide_responsive
+{
+	display:none
+}
+}
+
+
+
+#navbarSupportedContent {
+	justify-content: flex-end;
+}
+
+/*  Navbar */
+
+.presentation{
+	background-color: black;
+}
+
+.fake_conv{
+	background-color: red;
+}
+
+
+.putmehere {
+    width: 400px;
+    height: 50px;
+    background-color: red;
+    color:white;
+    margin-top: 20px;
+    line-height: 50px;
+    text-align: center;
+}

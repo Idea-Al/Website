@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FakeChatBot.JS Demo</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+    integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  <style>
+    .container {
+      margin: 150px auto;
+      max-width: 640px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FakeChatBot.JS Demo</h1>
+    <div class="card card-inverse card-primary">
+      <div class="card-block">
+        <blockquote class="card-blockquote">
+
+          <div id="chatbot">
+            <div class="fakechatbot-message" data-pause="1000"><strong><i class="fa fa-user"></i> User:</strong> Hello!
+            </div>
+            <div class="fakechatbot-message" data-pause="3000"><strong><i class="fa fa-android"></i> Bot:</strong> Good
+              morning! How can I help you?</div>
+            <div class="fakechatbot-message" data-pause="2000"><strong><i class="fa fa-user"></i> User:</strong> Do you
+              want to join us?</div>
+            <div class="fakechatbot-message" data-pause="1000"><strong><i class="fa fa-android"></i> Bot:</strong> Of
+              course, where are you?</div>
+            <div class="fakechatbot-message" data-pause="2000"><strong><i class="fa fa-user"></i> User:</strong> Do you
+              want to join us?</div>
+            <div class="fakechatbot-typing">Typing ...</div>
+          </div>
+
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+  <script src="../src/fakechatbot.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#chatbot').fakechatbot();
+    });
+
+  </script>
+
+</body>
+</html>
