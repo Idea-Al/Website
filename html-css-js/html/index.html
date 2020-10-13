@@ -62,7 +62,7 @@
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit error id beatae nisi nulla iusto laboriosam dolorum perferendis vel!</p>
       </div>
-      <div class="col-sm-4 fake_conv putmehere ">
+      <div class="col-sm-4 fake_conv  ">
       </div>
   </header>
 
@@ -73,22 +73,4 @@
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script>
-  var randomphrases = ['We the people','in order to form','a more perfect union','establish justice','insure domestic tranquility','provide for the common defence, promote the general welfare','and secure the blessings of liberty','to ourselves','and our posterity','do ordain and establish this constitution','of the United States of America'];
-
-var c = 0;
-var t;
-var timer_is_on = 0;
-
-timedCount();
-
-function timedCount()
-{
- t = setTimeout( function(){ timedCount() }, 1500 );
- random = Math.floor(Math.random() * (11 - 0 + 1)) + 0;
- $('.putmehere').html( randomphrases[random]);
-
-}
-
-</script>
   </html>
