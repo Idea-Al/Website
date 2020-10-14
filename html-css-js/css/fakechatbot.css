@@ -9,11 +9,52 @@ Licensed under the MIT license
 */
 
 .fakechatbot-typing,
-.fakechatbot-message { 
+.fakechatbot-message,
+.restart-btn { 
     display: none; 
 }
 
 .fakechatbot-typing-active,
-.fakechatbot-message-display { 
+.fakechatbot-message-display,
+.restart-btn-active { 
      display: inline-block; 
     }
+
+
+.fake_conv{
+	background-color: #e63946;
+	min-height: 50vh;
+}
+
+.animed_conv{
+	margin: 15px auto;
+	max-width: 100%;
+}
+
+.perso_2{
+	text-align: end;
+	margin-left: 80px 
+}
+
+
+.fakechatbot-message{
+
+	margin: 10px 0;
+	padding : 10px;
+}
+
+.card{
+	border: 0;
+	
+}
+
+.card-block{
+	min-height: 50vh;
+}
+
+#chatbot{
+	display: flex;
+	flex-direction: column;
+}
+
+

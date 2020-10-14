@@ -73,10 +73,11 @@
                   <div class="fakechatbot-message  perso_2" data-pause="3000"><strong><i class="fa fa-android"></i> Bot:</strong> Good morning! How can I help you?</div>
                   <div class="fakechatbot-message  perso_1" data-pause="2000"><strong><i class="fa fa-user"></i> User:</strong> Do you want to join us?</div>
                   <div class="fakechatbot-message perso_2" data-pause="1000"><strong><i class="fa fa-android"></i> Bot:</strong> Of course, where are you?</div>
-                  <div class="fakechatbot-typing perso_2">Typing ...</div>
-                </div>
-      
+                  <div class="fakechatbot-typing ">Typing ...</div>
+                </div>      
               </blockquote>
+
+              <button class="restart-btn">Restart annimation</button>
             </div>
           </div>
         </div>
@@ -94,6 +95,9 @@
   <script type="text/javascript">
     $(document).ready(function () {
       $('#chatbot').fakechatbot();
+    });
+    $(".restart-btn").click(function () {
+      $('#chatbot').restartChat();
     });
   </script>
   </html>

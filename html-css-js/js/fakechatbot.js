@@ -9,15 +9,17 @@ Version: 1.0
 */
 (function ( $ ) {
 
-    $.fn.fakechatbot = function( options ) {
+    $.fn.fakechatbot = function() {
 
+      
       // Plugin settings
       var settings = $.extend({
 
         // Duration per word in miliseconds
         durationPerWord: 200
 
-      }, options);
+      });
+
 
       // Display typing message
       var typingStart = function(elt){
@@ -29,6 +31,11 @@ Version: 1.0
         elt.removeClass('fakechatbot-typing-active');
       };
 
+       var restartButton = function (elt){
+        elt.addClass('restart-btn-active')
+      }
+
+
       // Save the current duration
       var currentDuration = 0;
       var countElements = $(this).children('.fakechatbot-message').length;
@@ -38,12 +45,14 @@ Version: 1.0
       typingStart($(this).children('.fakechatbot-typing'));
 
       $(this).children('.fakechatbot-message').each(function(index, value){
+   
         countElement++;
 
         // Count words
         var message = $(this).html();
         var messageWords = message.split(' ').length;
         var currentElement = $(this);
+      
 
         // Update the current duration to create a sequence
         currentDuration = currentDuration + (messageWords * settings.durationPerWord);
@@ -52,9 +61,9 @@ Version: 1.0
         setTimeout(function(){
           currentElement.addClass('fakechatbot-message-display');
         }, currentDuration);
+        
 
         if($(this).attr('data-pause')){
-
           setTimeout(function(){
             typingStop($('.fakechatbot-typing'));
           }, currentDuration);
@@ -68,13 +77,30 @@ Version: 1.0
 
         }
 
-        if(countElement == countElements){
+        if(countElement == countElements && countElement != 0){
           setTimeout(function(){
+          
             typingStop($('.fakechatbot-typing'));
           }, currentDuration);
+          setTimeout(function(){
+            restartButton($('.restart-btn'))
+          },currentDuration)
         }
-
       });
     };
+
+
+    $.fn.restartChat = function() {
+      
+      var restart = function (elt){
+        elt.removeClass('fakechatbot-message-display')
+       $( "button" ).even().removeClass( "restart-btn-active" )
+      }
+      restart($('.fakechatbot-message'))
+      $('#chatbot').fakechatbot()
+
+    }
+
+    
 
 }( jQuery ));
