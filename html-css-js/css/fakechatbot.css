@@ -8,6 +8,12 @@ Date Created: November 12, 2016
 Licensed under the MIT license
 */
 
-.fakechatbot-typing, .fakechatbot-message { display: none; }
+.fakechatbot-typing,
+.fakechatbot-message { 
+    display: none; 
+}
 
-.fakechatbot-typing-active, .fakechatbot-message-display { display: block; }
+.fakechatbot-typing-active,
+.fakechatbot-message-display { 
+     display: inline-block; 
+    }

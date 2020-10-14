@@ -8,10 +8,6 @@
 
 @media only screen and (max-width: 960px){
 
-body
-{
-	background-color: blue;
-}
 .hide_responsive
 {
 	display:none
@@ -24,22 +20,38 @@ body
 
 /* presentation */
 
-.presentation{
-	
-}
-
-/* fake conv */
 .fake_conv{
-
+	background-color: #e63946;
+	min-height: 50vh;
 }
-
 
 .animed_conv{
-	margin: 150px auto;
+	margin: 15px auto;
 	max-width: 100%;
 }
 
 .perso_2{
 	text-align: end;
+	margin-left: 80px 
+}
 
+
+.fakechatbot-message{
+
+	margin: 10px 0;
+	padding : 10px;
+}
+
+.card{
+	border: 0;
+	
+}
+
+.card-block{
+	min-height: 50vh;
+}
+
+#chatbot{
+	display: flex;
+	flex-direction: column;
 }
