@@ -2,8 +2,10 @@
 
 
 ----
-### Run ```'bower install tiny-slider'  or 'npm install tiny-slider'```
-https://github.com/ganlanyuan/tiny-slider#install
+### Run bower install ' or 'npm install'
+
+librairies utlisisées 
+https://github.com/ganlanyuan/tiny-slider
 
 ----
 
