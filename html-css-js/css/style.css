@@ -1,36 +1,88 @@
+body {
+	background-color: #F9C22E;
+}
 
 /* Navbar */
 @media only screen and (min-width: 960px) {
-	.hidedesktop{
-		display:none;
+	.hidedesktop {
+		display: none;
 	}
-	}
-
-@media only screen and (max-width: 960px){
-
-.hide_responsive
-{
-	display:none
 }
+
+@media only screen and (max-width: 960px) {
+
+	.hide_responsive {
+		display: none
+	}
 }
 
 #navbarSupportedContent {
 	justify-content: flex-end;
 }
 
+
 /* presentation */
 
+#btn {
+	background: #222;
+	height: 50px;
+	min-width: 150px;
+	border: none;
+	border-radius: 10px;
+	color: #eee;
+	font-size: 40px;
+	font-family: 'Cookie', cursive;
+	position: relative;
+	transition: 1s;
+	-webkit-tap-highlight-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding-top: 5px;
+}
+
+#btn #circle {
+	width: 5px;
+	height: 5px;
+	background: transparent;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	overflow: hidden;
+	transition: 500ms;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#btn:hover {
+	background: transparent;
+}
+
+#btn:hover #circle {
+	height: 50px;
+	width: 150px;
+	left: 0;
+	border-radius: 0;
+	border-bottom: 2px solid #eee;
+}
 
 
-
-.fake_conv{
-	background-color: #e63946;
+.fake_conv {
 	min-height: 30vh;
 }
 
 
 
-.presentation{
+.presentation {
 
 	padding: 100px 0;
 }
@@ -39,6 +91,37 @@
 
 /* Homepage User */
 
-.my-slider div{
+/* Carousel */
+#animation1 div {
 	height: 300px;
+}
+
+.tns-outer {
+	text-align: center;
+
+}
+
+
+figure { 
+	width: 30%;
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+	border: thin silver solid;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+
+img.scaled {
+	width: 100%;
+	float: left;
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+img.img-rounded{
+	
 }

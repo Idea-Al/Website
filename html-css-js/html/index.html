@@ -12,7 +12,7 @@
     integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <link rel="stylesheet" href="../../node_modules/tiny-slider/dist/tiny-slider.css">
   <link rel="stylesheet" href="../css/style.css">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/fakechatbot.css" />
 
 
@@ -89,7 +89,7 @@
         <p class="text-center my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit error id
           beatae nisi nulla iusto laboriosam dolorum perferendis vel!</p>
         <div class="d-flex justify-content-center my-3">
-          <button type="button" class="btn btn-outline-primary btn-login px-4 mr-3">Login</button>
+          <button type="button" class="btn btn-outline-primary btn-login px-4 mr-3 ">Login</button>
           <button type="button" class="btn btn-outline-secondary btn-signin px-4">SignIn</button>
         </div>
       </div>
@@ -98,16 +98,40 @@
   <!-- User  -->
   <section class="container section-users">
 
-    <div class="my-slider">
-      <div style="background-color: red;">Bonjour</div>
-      <div style="background-color: blue;">Bonjour</div>
-      <div style="background-color: aquamarine;">Bonjour</div>
-      <div style="background-color: red;">Bonjour</div>
-      <div style="background-color: blue;">Bonjour</div>
-      <div style="background-color: aquamarine;">Bonjour</div>
-      <div style="background-color: red;">Bonjour</div>
-      <div style="background-color: blue;">Bonjour</div>
-      <div style="background-color: aquamarine;">Bonjour</div>
+    <h3 class="text-center py-5">
+      Nos derniers inscrits
+    </h3>
+
+    <div id="animation1"">
+    
+      <figure>
+        <p><img  class="scaled img-rounded" src=" ../img_9205-1.jpg" alt="Eiffel tower">
+      <figcaption>
+        <h6>Name 1</h6>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
+      </figcaption>
+      </figure>
+      <figure>
+        <p><img class="scaled img-rounded"  src="../alan-bean.jpg" alt="username :">
+          <figcaption>
+            <h6>Name 2</h6>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
+          </figcaption>
+      </figure>
+      <figure>
+        <p><img class="scaled img-rounded" src="../IMG_0813.JPG" alt="username :">
+          <figcaption>
+            <h6>Name 3</h6>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
+          </figcaption>
+      </figure>
+      <figure>
+        <p><img class="scaled img-rounded" src="../IMG_1073.jpg" alt="username :">
+          <figcaption>
+            <h6>Name 4</h6>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
+          </figcaption>
+      </figure>
     </div>
 
   </section>
@@ -135,41 +159,79 @@
   $(".restart-btn").click(function () {
     $('#chatbot').restartChat();
   });
+
 </script>
 
 
 
 <script>
+
+
   var slider = tns({
-    container: '.my-slider',
+    container: '#animation1',
     mode: "gallery",
-    items:2,
-    gutter: 10,
-    animateIn: "jellklo",
-    animateOut: "rolklkllOut",
-    speed: 2000,
+    items: 1,
+    // animateIn: "jello",
+    //  animateOut: "rollOut",
+    speed: 400,
     swipeAngle: false,
-    autoplay: true,
-  autoplayHoverPause: true,
-  autoplayTimeout: 1000,
-  autoplayText: [
-    "▶",
-    "❚❚"
-  ],
-    // responsive: {
-    //   640: {
-    //     edgePadding: 20,
-    //     gutter: 20,
-    //     items: 2
-    //   },
-    //   700: {
-    //     gutter: 30
-    //   },
-    //   900: {
-    //     items: 3
-    //   }
-    // }
+    responsive: {
+      640: {
+        gutter: 20,
+        items: 1
+      },
+      700: {
+        gutter: 30
+      },
+      900: {
+        items: 2
+      },
+      1240: {
+        items: 3
+      }
+    },
+    // autoplay: true,
+    // autoplayHoverPause: true,
+    // autoplayTimeout: 3000,
+    // autoplayText: [
+    //   "▶",
+    //   "❚❚"
+    // ],
   });
+
+  // var slider = tns({
+  //   container: '#animation1',
+  //   mode: "gallery",
+  //   items:2,
+  //   gutter: 10,
+  //   animateIn: "jellklo",
+  //   animateOut: "rollOut",
+  //   speed: 2000,
+  //   mouseDrag :true,
+  //   swipeAngle: false,
+  //   autoplay: true,
+  // autoplayHoverPause: true,
+  // autoplayTimeout: 1000,
+  // autoplayText: [
+  //   "▶",
+  //   "❚❚"
+  // ],
+
+
+  //   responsive: {
+  //     640: {
+  //       edgePadding: 20,
+  //       gutter: 20,
+  //       items: 1
+  //     },
+  //     700: {
+  //       gutter: 30
+  //     },
+  //     900: {
+  //       items: 3
+  //     }
+  //   }
+  // });
 
 </script>
 
