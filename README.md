@@ -1,12 +1,11 @@
 # Website
 
 
-----
+
 ### Run 'bower install' or 'npm install'
 
-##librairies utilisées 
+> ## librairies utilisées :
+> > ### Js:
+> > > - https://github.com/ganlanyuan/tiny-slider
 
-https://github.com/ganlanyuan/tiny-slider
-
-----
 
