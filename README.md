@@ -2,7 +2,7 @@
 
 
 
-### Run 'bower install' or 'npm install'
+### Run npm install
 
 > ## librairies utilisées :
 > > ### Js:
