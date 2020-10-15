@@ -10,10 +10,15 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
     integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../node_modules/tiny-slider/dist/tiny-slider.css">
   <link rel="stylesheet" href="../css/style.css">
+
   <link rel="stylesheet" href="../css/fakechatbot.css" />
+
+
 </head>
 <body>
+  <!-- Nav -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupported"
@@ -48,41 +53,71 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Se connecter</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Mon compte</a>
-        </li>
       </ul>
     </div>
   </nav>
+  <!-- header (Presentation and fake conversation) -->
   <header class="container  ">
     <div class="row">
-      <div class="col-sm-7 presentation">
-
-        <h2>Lorem ipsum dolor sit amet </h2>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit error id beatae nisi nulla iusto laboriosam dolorum perferendis vel!</p>
-      </div>
-      <div class="col-sm-5 fake_conv  ">
+      <div class="col-lg-5 fake_conv order-lg-2">
 
         <div class="container animed_conv">
           <div class="card card-inverse card-primary">
             <div class="card-block">
               <blockquote class="card-blockquote">
                 <div id="chatbot">
-                  <div class="fakechatbot-message perso_1" data-pause="1000"><strong><i class="fa fa-user"></i> User:</strong> Hello!</div>
-                  <div class="fakechatbot-message  perso_2" data-pause="3000"><strong><i class="fa fa-android"></i> Bot:</strong> Good morning! How can I help you?</div>
-                  <div class="fakechatbot-message  perso_1" data-pause="2000"><strong><i class="fa fa-user"></i> User:</strong> Do you want to join us?</div>
-                  <div class="fakechatbot-message perso_2" data-pause="1000"><strong><i class="fa fa-android"></i> Bot:</strong> Of course, where are you?</div>
+                  <div class="fakechatbot-message perso_1" data-pause="1000"><strong><i class="fa fa-user"></i>
+                      User:</strong> Hello!</div>
+                  <div class="fakechatbot-message  perso_2" data-pause="3000"><strong><i class="fa fa-android"></i>
+                      Bot:</strong> Good morning! How can I help you?</div>
+                  <div class="fakechatbot-message  perso_1" data-pause="2000"><strong><i class="fa fa-user"></i>
+                      User:</strong> Do you want to join us?</div>
+                  <div class="fakechatbot-message perso_2" data-pause="1000"><strong><i class="fa fa-android"></i>
+                      Bot:</strong> Of course, where are you?</div>
                   <div class="fakechatbot-typing ">Typing ...</div>
-                </div>      
+                </div>
               </blockquote>
 
-              <button class="restart-btn">Restart annimation</button>
+              <button class="restart-btn">Restart animation</button>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-lg-7 presentation order-lg-1 d-flex flex-column p-3 justify-content-lg-center">
+        <h2 class='text-center align-top my-3'>Lorem ipsum </h2>
+
+        <p class="text-center my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit error id
+          beatae nisi nulla iusto laboriosam dolorum perferendis vel!</p>
+        <div class="d-flex justify-content-center my-3">
+          <button type="button" class="btn btn-outline-primary btn-login px-4 mr-3">Login</button>
+          <button type="button" class="btn btn-outline-secondary btn-signin px-4">SignIn</button>
+        </div>
+      </div>
   </header>
+
+  <!-- User  -->
+  <section class="container section-users">
+
+    <div class="my-slider">
+      <div style="background-color: red;">Bonjour</div>
+      <div style="background-color: blue;">Bonjour</div>
+      <div style="background-color: aquamarine;">Bonjour</div>
+      <div style="background-color: red;">Bonjour</div>
+      <div style="background-color: blue;">Bonjour</div>
+      <div style="background-color: aquamarine;">Bonjour</div>
+      <div style="background-color: red;">Bonjour</div>
+      <div style="background-color: blue;">Bonjour</div>
+      <div style="background-color: aquamarine;">Bonjour</div>
+    </div>
+
+  </section>
+
+  <!-- Project -->
+  <section class="container section-projects">
+
+  </section>
+
+
 
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -91,13 +126,51 @@
   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="../js/fakechatbot.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('#chatbot').fakechatbot();
-    });
-    $(".restart-btn").click(function () {
-      $('#chatbot').restartChat();
-    });
-  </script>
-  </html>
+<script src="../js/fakechatbot.js"></script>
+<script src="../../node_modules/tiny-slider/dist/min/tiny-slider.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#chatbot').fakechatbot();
+  });
+  $(".restart-btn").click(function () {
+    $('#chatbot').restartChat();
+  });
+</script>
+
+
+
+<script>
+  var slider = tns({
+    container: '.my-slider',
+    mode: "gallery",
+    items:2,
+    gutter: 10,
+    animateIn: "jellklo",
+    animateOut: "rolklkllOut",
+    speed: 2000,
+    swipeAngle: false,
+    autoplay: true,
+  autoplayHoverPause: true,
+  autoplayTimeout: 1000,
+  autoplayText: [
+    "▶",
+    "❚❚"
+  ],
+    // responsive: {
+    //   640: {
+    //     edgePadding: 20,
+    //     gutter: 20,
+    //     items: 2
+    //   },
+    //   700: {
+    //     gutter: 30
+    //   },
+    //   900: {
+    //     items: 3
+    //   }
+    // }
+  });
+
+</script>
+
+</html>

@@ -20,38 +20,25 @@
 
 /* presentation */
 
+
+
+
 .fake_conv{
 	background-color: #e63946;
-	min-height: 50vh;
-}
-
-.animed_conv{
-	margin: 15px auto;
-	max-width: 100%;
-}
-
-.perso_2{
-	text-align: end;
-	margin-left: 80px 
+	min-height: 30vh;
 }
 
 
-.fakechatbot-message{
 
-	margin: 10px 0;
-	padding : 10px;
+.presentation{
+
+	padding: 100px 0;
 }
 
-.card{
-	border: 0;
-	
-}
 
-.card-block{
-	min-height: 50vh;
-}
 
-#chatbot{
-	display: flex;
-	flex-direction: column;
+/* Homepage User */
+
+.my-slider div{
+	height: 300px;
 }
