@@ -93,12 +93,15 @@ body {
 
 /* Carousel */
 #animation1 div {
-	height: 300px;
+	margin-left: 10px;
 }
 
 .tns-outer {
 	text-align: center;
+}
 
+.tns-visually-hidden{
+	position: hidden;
 }
 
 
@@ -108,7 +111,7 @@ figure {
 	font-style: italic;
 	font-size: smaller;
 	text-indent: 0;
-	border: thin silver solid;
+	/* border: thin silver solid; */
 	margin: 0.5em;
 	padding: 0.5em;
 }
@@ -122,6 +125,13 @@ img.scaled {
 	object-fit: cover;
 }
 
-img.img-rounded{
-	
+
+.essai{
+	color: red
+}
+
+/* Caption User Carousel */
+
+figcaption{
+	margin-top : 30px
 }
