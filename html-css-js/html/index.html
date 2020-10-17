@@ -105,28 +105,29 @@
     <div id="animation1"">
     
       <figure>
-        <p><img  class="scaled img-rounded" src=" ../img_9205-1.jpg" alt="Eiffel tower">
-      <figcaption>
-        <h6>Name 1</h6>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
+        <img  class="scaled img-rounded" src=" ../img_9205-1.jpg" alt="Eiffel tower">
+      <figcaption> 
+          <h6>Name 1</h6>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
       </figcaption>
       </figure>
+
       <figure>
-        <p><img class="scaled img-rounded"  src="../alan-bean.jpg" alt="username :">
+        <img class="scaled img-rounded"  src="../alan-bean.jpg" alt="username :">
           <figcaption>
             <h6>Name 2</h6>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
           </figcaption>
       </figure>
       <figure>
-        <p><img class="scaled img-rounded" src="../IMG_0813.JPG" alt="username :">
+      <img class="scaled img-rounded" src="../IMG_0813.JPG" alt="username :">
           <figcaption>
             <h6>Name 3</h6>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
           </figcaption>
       </figure>
       <figure>
-        <p><img class="scaled img-rounded" src="../IMG_1073.jpg" alt="username :">
+        <img class="scaled img-rounded" src="../IMG_1073.jpg" alt="username :">
           <figcaption>
             <h6>Name 4</h6>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
@@ -166,14 +167,14 @@
 
 <script>
 
-
+//https://github.com/ganlanyuan/tiny-slider#options
   var slider = tns({
     container: '#animation1',
     mode: "gallery",
     items: 1,
     // animateIn: "jello",
     //  animateOut: "rollOut",
-    speed: 600,
+    //speed: 10000,
     swipeAngle: false,
     responsive: {
       400: {
@@ -188,7 +189,7 @@
         items: 3
       }
     },
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: false,
     autoplayTimeout: 3000,
     autoplayButtonOutput:true,

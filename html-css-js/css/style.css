@@ -23,58 +23,6 @@ body {
 
 /* presentation */
 
-#btn {
-	background: #222;
-	height: 50px;
-	min-width: 150px;
-	border: none;
-	border-radius: 10px;
-	color: #eee;
-	font-size: 40px;
-	font-family: 'Cookie', cursive;
-	position: relative;
-	transition: 1s;
-	-webkit-tap-highlight-color: transparent;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	padding-top: 5px;
-}
-
-#btn #circle {
-	width: 5px;
-	height: 5px;
-	background: transparent;
-	border-radius: 50%;
-	position: absolute;
-	top: 0;
-	left: 50%;
-	overflow: hidden;
-	transition: 500ms;
-}
-
-.noselect {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-#btn:hover {
-	background: transparent;
-}
-
-#btn:hover #circle {
-	height: 50px;
-	width: 150px;
-	left: 0;
-	border-radius: 0;
-	border-bottom: 2px solid #eee;
-}
-
 
 .fake_conv {
 	min-height: 30vh;
@@ -92,9 +40,8 @@ body {
 /* Homepage User */
 
 /* Carousel */
-#animation1 div {
-	margin-left: 10px;
-}
+
+
 
 .tns-outer {
 	text-align: center;
@@ -119,7 +66,6 @@ figure {
 
 img.scaled {
 	width: 100%;
-	float: left;
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
@@ -133,5 +79,17 @@ img.scaled {
 /* Caption User Carousel */
 
 figcaption{
-	margin-top : 30px
+	margin-top : 30px;
+	border : 2px solid black;
+	background-color: aliceblue;
+	width: 100%;
+	margin: auto;
+}
+
+#animation1 > .tns-item {
+
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0px;
 }
