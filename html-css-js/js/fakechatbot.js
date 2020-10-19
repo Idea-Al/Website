@@ -17,7 +17,6 @@ Version: 1.0
 
         // Duration per word in miliseconds
         durationPerWord: 200
-
       });
 
 
@@ -74,12 +73,10 @@ Version: 1.0
             typingStart($('.fakechatbot-typing'));
 
           }, currentDuration);
-
         }
 
         if(countElement == countElements && countElement != 0){
           setTimeout(function(){
-          
             typingStop($('.fakechatbot-typing'));
           }, currentDuration);
           setTimeout(function(){

@@ -45,12 +45,17 @@ Licensed under the MIT license
 }
 
 .card-block{
-	min-height: 50vh;
+	min-height: 300px;
+	max-height: 400px;
 }
 
 #chatbot{
 	display: flex;
 	flex-direction: column;
+	
 }
 
 
+.card-block{
+	background-color:#7E1946
+}

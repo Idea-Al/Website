@@ -1,25 +1,64 @@
 body {
-	background-color: #F9C22E;
-}
+	background-color: #0C6291;
+	color : #FBFEF9;
 
-/* Navbar */
-@media only screen and (min-width: 960px) {
-	.hidedesktop {
-		display: none;
+}
+nav{
+	z-index: 1;
+}
+/* navbar */
+body.offcanvas-active {
+	overflow: hidden;
+  }
+
+  .offcanvas-header {
+	display: none;
+  }
+
+  @media (max-width: 992px) {
+	.offcanvas-header {
+	  display: block;
 	}
-}
 
-@media only screen and (max-width: 960px) {
-
-	.hide_responsive {
-		display: none
+	.navbar-collapse {
+	  position: fixed;
+	  top: 0;
+	  bottom: 0;
+	  width: 100%;
+	  padding-right: 1rem;
+	  padding-left: 1rem;
+	  overflow-y: auto;
+	  visibility: hidden;
+	  background-color: black;
+	  transition: visibility .2s ease-in-out, transform .2s ease-in-out;
 	}
+
+	.right {
+	  left: 100%;
+	}
+
+	.left {
+	  right: 100%
+	}
+
+	.left.show {
+	  visibility: visible;
+	  transform: translateX(100%);
+	}
+
+	.right.show {
+	  visibility: visible;
+	  transform: translateX(-100%);
+	}
+
+  }
+
+#logo{
+	width: 120px;
+	color: #F9C22E;
 }
 
-#navbarSupportedContent {
-	justify-content: flex-end;
-}
-
+/* END navbar */
 
 /* presentation */
 
@@ -31,7 +70,6 @@ body {
 
 
 .presentation {
-
 	padding: 100px 0;
 }
 
@@ -81,7 +119,6 @@ img.scaled {
     cursor:         grab; /* W3C standards syntax, should come least */
 }
 
-
 img.scaled:active{
 	cursor: -webkit-grabbing;
     cursor:    -moz-grabbing;
@@ -91,11 +128,6 @@ img.scaled:active{
 
 
 
-
-.essai{
-	color: red
-}
-
 /* Caption User Carousel */
 
 figcaption{
@@ -104,16 +136,22 @@ figcaption{
 	background-color: aliceblue;
 	width: 100%;
 	margin: auto;
+	background-color:#A63446 ;
 }
 
 figcaption h6{
 	margin-top: 10px;
 }
 
-#animation1 > .tns-item {
+#users > .tns-item, 
+#projects > .tns-item{
 
 	margin-left: 0;
 	margin-right: 0;
 	padding-left: 0;
 	padding-right: 0px;
+}
+
+a{
+	color: #F9C22E !important
 }
