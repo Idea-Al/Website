@@ -1,59 +1,65 @@
 body {
-	background-color: #0C6291;
-	color : #FBFEF9;
-
+	background-color: hsl(201, 85%, 31%);
+	color: #FBFEF9;
+	padding-top: 4.5rem;
+	margin: auto;
 }
-nav{
+
+
+
+nav {
+	position: fixed;
 	z-index: 1;
 }
+
 /* navbar */
 body.offcanvas-active {
 	overflow: hidden;
-  }
+}
 
-  .offcanvas-header {
+.offcanvas-header {
 	display: none;
-  }
+}
 
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
 	.offcanvas-header {
-	  display: block;
+		display: block;
 	}
 
 	.navbar-collapse {
-	  position: fixed;
-	  top: 0;
-	  bottom: 0;
-	  width: 100%;
-	  padding-right: 1rem;
-	  padding-left: 1rem;
-	  overflow-y: auto;
-	  visibility: hidden;
-	  background-color: black;
-	  transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		padding-right: 1rem;
+		padding-left: 1rem;
+		overflow-y: auto;
+		visibility: hidden;
+		background-color: black;
+		transition: visibility .2s ease-in-out, transform .2s ease-in-out;
 	}
 
 	.right {
-	  left: 100%;
+		left: 100%;
 	}
 
 	.left {
-	  right: 100%
+		right: 100%
 	}
 
 	.left.show {
-	  visibility: visible;
-	  transform: translateX(100%);
+		visibility: visible;
+		transform: translateX(100%);
 	}
 
 	.right.show {
-	  visibility: visible;
-	  transform: translateX(-100%);
+		visibility: visible;
+		transform: translateX(-100%);
 	}
 
-  }
+}
 
-#logo{
+#logo {
 	width: 120px;
 	color: #F9C22E;
 }
@@ -85,12 +91,13 @@ body.offcanvas-active {
 	text-align: center;
 }
 
-.tns-visually-hidden{
+.tns-visually-hidden {
 	position: hidden;
 }
 
 
-figure { 
+figure {
+
 	width: 30%;
 	text-align: center;
 	font-style: italic;
@@ -99,59 +106,95 @@ figure {
 	/* border: thin silver solid; */
 	margin: 0.5em;
 	padding: 0.5em;
+	position: relative;
+	top: 0;
+	transition: top ease 0.5s;
 }
 
+figure:hover {
+	top: -10px;
+}
 
 img.scaled {
 	width: 100%;
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	object-fit: cover;
 
-		border-radius: 50%;
-	  
 }
 
- img.scaled{
-	cursor: move; /* fallback if grab cursor is unsupported */
-    cursor: -webkit-grab; /* Chrome 1-21, Safari 4+ */
-    cursor:    -moz-grab; /* Firefox 1.5-26 */
-    cursor:         grab; /* W3C standards syntax, should come least */
+img.users {
+	width: 200px;
+	height: 200px;
 }
 
-img.scaled:active{
+img.projects {
+	width: 200px;
+	height: 200px;
+}
+
+
+img.img-rounded {
+	border-radius: 50%;
+}
+
+
+
+img.scaled {
+	cursor: move;
+	/* fallback if grab cursor is unsupported */
+	cursor: -webkit-grab;
+	/* Chrome 1-21, Safari 4+ */
+	cursor: -moz-grab;
+	/* Firefox 1.5-26 */
+	cursor: grab;
+	border: white 2px solid;
+	border-bottom-width: 0;
+	border-radius: 3px;
+}
+
+
+img.scaled:active {
 	cursor: -webkit-grabbing;
-    cursor:    -moz-grabbing;
-    cursor:         grabbing;
-} 
+	cursor: -moz-grabbing;
+	cursor: grabbing;
+}
 
+img.img-rounded {
+	border-radius: 50%;
+}
 
 
 
 /* Caption User Carousel */
 
-figcaption{
-	margin-top : 30px;
-	border : 2px solid black;
+
+
+figcaption {
+	margin-top: 30px;
+	border: 2px solid white;
 	background-color: aliceblue;
-	width: 100%;
+	width: 300px;
 	margin: auto;
-	background-color:#A63446 ;
+	background-color: #FAA300;
+	border-radius: 3px;
 }
 
-figcaption h6{
+figcaption h6 {
 	margin-top: 10px;
 }
 
-#users > .tns-item, 
-#projects > .tns-item{
+#users>.tns-item,
+#projects>.tns-item {
 
 	margin-left: 0;
 	margin-right: 0;
 	padding-left: 0;
-	padding-right: 0px;
+	padding-right: 0px !important;
 }
 
-a{
+nav a {
 	color: #F9C22E !important
 }
+
+

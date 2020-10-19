@@ -19,7 +19,7 @@
 </head>
 <body>
   <!-- Nav -->
-  <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+  <nav class="navbar navbar-expand-lg navbar-light justify-content-between fixed-top">
     <div class="order-lg-1">
       <button class="navbar-toggler" type="button" data-trigger="#menu">
         <span class="navbar-toggler-icon"></span>
@@ -108,7 +108,7 @@
     <div  id="users">
     
       <figure>
-        <img  class="scaled img-rounded" src="https://via.placeholder.com/300/0000FF/808080" alt="Eiffel tower">
+        <img  class="scaled users  img-rounded" src="https://via.placeholder.com/300/0000FF/808080" alt="Eiffel tower">
       <figcaption> 
           <h6>Name 1</h6>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
@@ -116,21 +116,21 @@
       </figure>
 
       <figure>
-        <img class="scaled img-rounded"  src="../alan-bean.jpg" alt="username :">
+        <img class="scaled users img-rounded"  src="../alan-bean.jpg" alt="username :">
           <figcaption>
             <h6>Name 2</h6>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
           </figcaption>
       </figure>
       <figure>
-      <img class="scaled img-rounded" src=" https://via.placeholder.com/300/FF0000/FFFFFF" alt="username :">
+      <img class="scaled users img-rounded" src=" https://via.placeholder.com/300/FF0000/FFFFFF" alt="username :">
           <figcaption>
             <h6>Name 3</h6>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
           </figcaption>
       </figure>
       <figure>
-        <img class="scaled img-rounded" src=" https://via.placeholder.com/300/FFFF00/000000" alt="username :">
+        <img class="scaled users img-rounded" src=" https://via.placeholder.com/300/FFFF00/000000" alt="username :">
           <figcaption>
             <h6>Name 4</h6>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
@@ -143,14 +143,12 @@
 <!-- Projects  -->
 <section class="container section-projects">
 
-  <h3 class="text-center py-5">
-    Ne projects
-  </h3>
+  <h3 class="text-center py-5">New projects</h3>
 
   <div id="projects">
   
     <figure>
-      <img  class="scaled img-rounded" src="https://via.placeholder.com/300/0000FF/808080" alt="Eiffel tower">
+      <img  class="scaled projects"  src="https://via.placeholder.com/300/0000FF/808080" alt="Eiffel tower">
     <figcaption> 
         <h6>Name 1</h6>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
@@ -158,21 +156,21 @@
     </figure>
 
     <figure>
-      <img class="scaled img-rounded"  src="../alan-bean.jpg" alt="username :">
+      <img class="scaled projects"  src="../alan-bean.jpg" alt="username :">
         <figcaption>
           <h6>Name 2</h6>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
         </figcaption>
     </figure>
     <figure>
-    <img class="scaled img-rounded" src=" https://via.placeholder.com/300/FF0000/FFFFFF" alt="username :">
+    <img class="scaled projects" src=" https://via.placeholder.com/300/FF0000/FFFFFF" alt="username :">
         <figcaption>
           <h6>Name 3</h6>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
         </figcaption>
     </figure>
     <figure>
-      <img class="scaled img-rounded" src=" https://via.placeholder.com/300/FFFF00/000000" alt="username :">
+      <img class="scaled projects" src=" https://via.placeholder.com/300/FFFF00/000000" alt="username :">
         <figcaption>
           <h6>Name 4</h6>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
@@ -181,10 +179,18 @@
   </div>
 
   <!-- Project -->
-  <section class="container section-projects">
-   
+  <footer class="container d-flex justify-content-between">
+   <ul class="footer">
+     <li>Nous contacter</li>
+     <li>Qui sommes nous ?</li>
+     <li>Notre mission</li>
+   </ul>
+   <ul>
+     <li>Mentions légales</li>
+     <li>CGU</li>
+   </ul>
 
-  </section>
+  </footer>
 
 
   
@@ -238,10 +244,10 @@
         items: 3
       }
     },
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: false,
     autoplayTimeout: 3000,
-    autoplayButtonOutput:false,
+    autoplayButtonOutput:true,
     mouseDrag: true,
   });
 
@@ -255,6 +261,7 @@
       container: '#projects',
       //mode: "gallery",
       items: 1,
+      //autoplayDirection :'backward',
       // animateIn: "jello",
       //  animateOut: "rollOut",
       //speed: 10000,
@@ -272,7 +279,7 @@
           items: 3
         }
       },
-      autoplay: true,
+      autoplay: false,
       autoplayHoverPause: false,
       autoplayTimeout: 3000,
       autoplayButtonOutput:false,
