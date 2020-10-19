@@ -69,7 +69,27 @@ img.scaled {
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
+
+		border-radius: 50%;
+	  
 }
+
+ img.scaled{
+	cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: -webkit-grab; /* Chrome 1-21, Safari 4+ */
+    cursor:    -moz-grab; /* Firefox 1.5-26 */
+    cursor:         grab; /* W3C standards syntax, should come least */
+}
+
+
+img.scaled:active{
+	cursor: -webkit-grabbing;
+    cursor:    -moz-grabbing;
+    cursor:         grabbing;
+} 
+
+
+
 
 
 .essai{
@@ -84,6 +104,10 @@ figcaption{
 	background-color: aliceblue;
 	width: 100%;
 	margin: auto;
+}
+
+figcaption h6{
+	margin-top: 10px;
 }
 
 #animation1 > .tns-item {
