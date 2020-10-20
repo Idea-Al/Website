@@ -1,6 +1,6 @@
 body {
 	background-color: hsl(201, 85%, 31%);
-	color: #FBFEF9;
+	color: #ebb82e;
 	padding-top: 4.5rem;
 	margin: auto;
 }
@@ -9,8 +9,15 @@ body {
 
 nav {
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
+	background-color: #FAA300;
 }
+
+
+nav a {
+	color: #F9C22E !important
+}
+
 
 /* navbar */
 body.offcanvas-active {
@@ -27,6 +34,7 @@ body.offcanvas-active {
 	}
 
 	.navbar-collapse {
+		z-index : 3;
 		position: fixed;
 		top: 0;
 		bottom: 0;
@@ -191,10 +199,6 @@ figcaption h6 {
 	margin-right: 0;
 	padding-left: 0;
 	padding-right: 0px !important;
-}
-
-nav a {
-	color: #F9C22E !important
 }
 
 
