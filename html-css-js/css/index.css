@@ -20,7 +20,7 @@ html, body {
   }
   .popup__photo img {
     width: 100% !important;
-    height: 120% !important;
+    height: 100% !important;
 }
 .popup__photo{
   width: 100% !important;
