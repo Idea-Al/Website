@@ -4,6 +4,10 @@ body {
 	padding-top: 4.5rem;
 	margin: auto;
 }
+.container{
+	min-width: 100% !important;
+	max-height: 100% !important;
+}
 
 
 
@@ -198,3 +202,83 @@ nav a {
 }
 
 
+/*card user*/
+
+.card-text{
+	color: black !important;
+}
+
+.card-img-top {
+	height: 130px;
+	width: 130px;
+}
+
+
+
+
+
+
+.top_div{
+	height: 8em;
+	width: 100%;
+}
+
+
+
+
+.filter_user{
+	overflow-y: hidden;
+	position: fixed;
+	left: 35px;  
+}
+
+.user_container{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.user_list{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 250px;
+	flex-wrap: wrap;
+	/*justify-content: space-between;*/
+}
+@media (min-width: 1300px) {
+.btn{
+	display: none;
+}
+
+#collapseExample{
+	display: block;
+}
+}
+
+@media (max-width: 700px) {
+
+	.filter_user{
+		position: static;
+	}
+	.filter_user button {
+		display:block;
+		margin: auto;
+	}
+	.filter_user ul{
+		padding-top: 1rem;
+		display:block;
+		float: left;
+	}
+	.container{
+		position: static;
+		flex-direction: column !important;
+	}
+	.user_list{
+		order:2;
+		padding: 0%;	
+	}
+	.card{
+		margin: 1.5rem auto !important;
+	}
+}
