@@ -202,21 +202,7 @@ nav a {
 }
 
 
-/*card user*/
-
-.card-text{
-	color: black !important;
-}
-
-.card-img-top {
-	height: 130px;
-	width: 130px;
-}
-
-
-
-
-
+/* just a div for the top of the user list*/
 
 .top_div{
 	height: 8em;
@@ -226,10 +212,32 @@ nav a {
 
 
 
+/*card user*/
+
+.card-text{
+	color: black !important;
+}
+
+.user_img {
+	height: 130px;
+	width: 130px;
+}
+
+.card{
+	background-color: #EFF7F6;
+	border-radius: 1rem;
+	
+}
+
+.card:hover{
+	top: 10px;
+}
+
+
 .filter_user{
 	overflow-y: hidden;
 	position: fixed;
-	left: 35px;  
+	left: 35px;
 }
 
 .user_container{
@@ -246,7 +254,7 @@ nav a {
 	flex-wrap: wrap;
 	/*justify-content: space-between;*/
 }
-@media (min-width: 1300px) {
+@media (min-width: 950px) {
 .btn{
 	display: none;
 }
@@ -256,10 +264,11 @@ nav a {
 }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
 
 	.filter_user{
 		position: static;
+		margin-bottom: 1em;
 	}
 	.filter_user button {
 		display:block;
