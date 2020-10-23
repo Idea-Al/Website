@@ -1,10 +1,11 @@
 body {
 	background-color: hsl(201, 85%, 31%);
-	color: #ebb82e;
+	color: #fcfcfc;
 	padding-top: 4.5rem;
 	margin: auto;
 }
-.container{
+
+.container {
 	min-width: 100% !important;
 	max-height: 100% !important;
 }
@@ -14,13 +15,25 @@ body {
 nav {
 	position: fixed;
 	z-index: 2;
-	background-color: #FAA300;
+	background-color: #6184D8;
+	/* height: 3.5rem; */
 }
-
+/* 
 
 nav a {
-	color: #F9C22E !important
-}
+	
+	color: #9CEC5B !important;
+	transition:  600ms;
+
+} 
+/* 
+nav a:hover{
+	border: #FAA300 solid 1px;
+	margin: auto;
+	padding: auto;
+	
+	/* border-radius: 25%; 
+} */
 
 
 /* navbar */
@@ -38,11 +51,11 @@ body.offcanvas-active {
 	}
 
 	.navbar-collapse {
-		z-index : 3;
+		z-index: 3;
 		position: fixed;
 		top: 0;
 		bottom: 0;
-		width: 100%;
+		width: 33%;
 		padding-right: 1rem;
 		padding-left: 1rem;
 		overflow-y: auto;
@@ -69,7 +82,11 @@ body.offcanvas-active {
 		transform: translateX(-100%);
 	}
 
+	footer {
+		text-align: center;
+	}
 }
+
 
 #logo {
 	width: 120px;
@@ -208,7 +225,7 @@ figcaption h6 {
 
 /* just a div for the top of the user list*/
 
-.top_div{
+.top_div {
 	height: 8em;
 	width: 100%;
 }
@@ -218,7 +235,7 @@ figcaption h6 {
 
 /*card user*/
 
-.card-text{
+.card-text {
 	color: black !important;
 }
 
@@ -227,71 +244,174 @@ figcaption h6 {
 	width: 130px;
 }
 
-.card{
+.user_list .card {
 	background-color: #EFF7F6;
 	border-radius: 1rem;
-	
+
 }
 
-.card:hover{
-	top: 10px;
+.user_list .card:hover {
+	top: -10px;
 }
 
 
-.filter_user{
+.filter_user {
 	overflow-y: hidden;
 	position: fixed;
-	left: 35px;
+	left: 1rem;
 }
 
-.user_container{
+.user_container {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
 }
 
-.user_list{
+.user_list {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding-left: 250px;
+	padding-left: 145px;
 	flex-wrap: wrap;
-	/*justify-content: space-between;*/
-}
-@media (min-width: 950px) {
-.btn{
-	display: none;
+	justify-content: center;
 }
 
-#collapseExample{
-	display: block;
-}
+@media (min-width: 992px) {
+	.btn {
+		display: none;
+	}
+
+	#collapseExample {
+		display: block;
+	}
 }
 
-@media (max-width: 950px) {
+@media (max-width: 992px) {
+	/*NAVBAR RESPONSIVE */
 
-	.filter_user{
+	.navbar-collapse{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.nav-link{
+		color: white !important;
+		font-size: small;
+	}
+	.nav_right, .nav_left{
+		padding-top: 2rem;
+		display: block;
+		text-align: right;
+	}
+	.nav_left{
+		text-align: left;
+	}
+
+	.filter_user {
 		position: static;
 		margin-bottom: 1em;
 	}
+
 	.filter_user button {
-		display:block;
+		display: block;
 		margin: auto;
 	}
-	.filter_user ul{
+
+	.filter_user ul {
 		padding-top: 1rem;
-		display:block;
+		display: block;
 		float: left;
 	}
-	.container{
+
+	.container {
 		position: static;
 		flex-direction: column !important;
 	}
-	.user_list{
-		order:2;
-		padding: 0%;	
+
+	.user_list {
+		order: 2;
+		padding: 0%;
+		/* margin-left: 1rem; */
 	}
-	.card{
+
+	.card {
 		margin: 1.5rem auto !important;
 	}
 }
+
+
+nav {
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+	padding: 50px 0;
+	box-shadow: 0px 5px 0px #dedede;
+  }
+  nav ul {
+	list-style: none;
+	text-align: center;
+  }
+  nav ul li {
+	display: inline-block;
+  }
+  nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #aaa;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+	transition: all .5s;
+  }
+  nav ul li a:hover {
+	color: #555;
+  }
+  
+  
+  /* stroke */
+  nav.stroke ul li a,
+  nav.fill ul li a {
+	position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: #aaa;
+	height: 1px;
+  }
+  nav.stroke ul li a:hover:after {
+	width: 100%;
+  }
+  
+  nav.fill ul li a {
+	transition: all 2s;
+  }
+  
+  nav.fill ul li a:after {
+	text-align: left;
+	content: '.';
+	margin: 0;
+	opacity: 0;
+  }
+  nav.fill ul li a:hover {
+	color: #fff;
+	z-index: 1;
+  }
+  nav.fill ul li a:hover:after {
+	z-index: -10;
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+	-moz-animation: fill 1s forwards;
+	opacity: 1;
+  }
