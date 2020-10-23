@@ -119,7 +119,7 @@ html, body {
   text-decoration: none;
 }
 
-.btn{
+.btn_modal{
   display: inline;
   min-height: 30px;
 }
