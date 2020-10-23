@@ -67,11 +67,46 @@
         Filtrer les utilisateurs
       </button>
       <div class="collapse" id="collapseExample">
-        <ul>
-          <li>Métier</li>
-          <li>Technos</li>
-          <li>Année d'experience</li>
-        </ul>
+        <div class="filter">
+          <h1>Select models</h1>
+          <div class="checkbox">
+            <label><input type="checkbox" rel="apple" onchange="change()"/>Apple</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" rel="samsung" onchange="change()"/>Samsung</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" rel="xiaomi" onchange="change()"/>Xiaomi</label>
+          </div>
+          <h1>Select processors</h1>
+          <div class="checkbox">
+            <label><input type="checkbox" rel="a9" onchange="change()"/>A9</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" rel="a8" onchange="change()"/>A8</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" rel="snapdragon" onchange="change()"/>Snapdragon</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" rel="exynos" onchange="change()"/>Exynos</label>
+          </div>
+        </div>
+        
+        <div class="result">
+          <div class="apple a9">
+            <h1>iPhone 7</h1>
+          </div>
+          <div class="apple a8">
+            <h1>iPhone 6</h1>
+          </div>
+          <div class="samsung exynos">
+            <h1>Samsung s7</h1>
+          </div>
+          <div class="xiaomi snapdragon">
+            <h1>Xiaomi Redmi note 4x</h1>
+          </div>
+        </div>
       </div>
     </div>
     <div class="user_container">
@@ -148,13 +183,13 @@
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-
           </div>
         </div>
       </div>
     </div>
   </div>
 
+ 
   <div class="popup" id="popup">
     <div class="popup-inner">
       <div class="popup__photo">
@@ -204,6 +239,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script src="./html-css-js/js/navbar.js"></script>
+<script src="./html-css-js/js/search.js"></script>
 </body>
 
 
