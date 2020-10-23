@@ -28,8 +28,9 @@ html, body {
 
 }
 
+
 .popup {
- 
+  color: #0A0A0A;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,6 +117,10 @@ html, body {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+}
+
+.btn{
+  display: inline;
 }
 
 /*# sourceMappingURL=index.css.map */
