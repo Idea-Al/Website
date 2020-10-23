@@ -1,3 +1,4 @@
+
 body {
 	background-color: hsl(201, 85%, 31%);
 	color: #fcfcfc;
@@ -5,12 +6,24 @@ body {
 	margin: auto;
 }
 
+
+
+/*USER FILTER */
+.aside_user {
+    padding: 0 1em;
+  }
+  .aside_user div {
+    margin: .25em 0;
+  }
+  input {
+    margin-right: 5px;
+  }
+  /*   */
+
 .container {
 	min-width: 100% !important;
 	max-height: 100% !important;
 }
-
-
 
 nav {
 	position: fixed;

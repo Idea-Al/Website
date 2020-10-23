@@ -52,144 +52,116 @@
           <li class="nav-item"> <a class="nav-link" href="#"> Se connecter </a> </li>
           <li class="nav-item"><a class="nav-link" href="#"> S'inscrire</a></li>
         </ul>
-      </div> <!-- navbar-collapse.// -->
+      </div>
     </div>
   </nav>
 
-  
-<div class="top_div">
+  <div class="top_div">
 
-</div>
-  
+  </div>
   <div class="container d-flex position-relative">
-    <div class="filter_user">
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <aside class="filter_user aside_user ">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">
         Filtrer les utilisateurs
       </button>
       <div class="collapse" id="collapseExample">
         <div class="filter">
-          <h1>Select models</h1>
-          <div class="checkbox">
-            <label><input type="checkbox" rel="apple" onchange="change()"/>Apple</label>
+          <h3>Métier</h3>
+          <div>
+            <div><input type="checkbox" name="job" value="starting" id="starting"><label for="starting">Web
+                développeur</label></div>
+            <div><input type="checkbox" name="job" value="reserves" id="reserves"><label for="reserves">Web
+                designer</label></div>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" rel="samsung" onchange="change()"/>Samsung</label>
+          <h3>Technos/Outils</h3>
+          <div>
+            <div><input type="checkbox" name="techno" value="php" id="php"><label for="guard">Php</label></div>
+            <div><input type="checkbox" name="techno" value="react" id="react"><label for="forward">React</label></div>
+            <div><input type="checkbox" name="techno" value="symfony" id="symfony"><label for="centered">Symfony</label>
+            </div>
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" rel="xiaomi" onchange="change()"/>Xiaomi</label>
+          <h3>Méthode</h3>
+          <div>
+            <div><input type="checkbox" name="method" value="agile" id="agile"><label for="agile">Agile</label></div>
+            <div><input type="checkbox" name="method" value="scrum" id="scrum"><label for="scrum">Scrum</label></div>
           </div>
-          <h1>Select processors</h1>
-          <div class="checkbox">
-            <label><input type="checkbox" rel="a9" onchange="change()"/>A9</label>
+
+
+    </aside>
+
+    <main class="user_container">
+      <section class="user_list">
+        <div class="card ml-3 mb-4 user php" style="width: 19rem;">
+          <div class="mx-auto">
+            <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
           </div>
-          <div class="checkbox">
-            <label><input type="checkbox" rel="a8" onchange="change()"/>A8</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" rel="snapdragon" onchange="change()"/>Snapdragon</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" rel="exynos" onchange="change()"/>Exynos</label>
-          </div>
-        </div>
-        
-        <div class="result">
-          <div class="apple a9">
-            <h1>iPhone 7</h1>
-          </div>
-          <div class="apple a8">
-            <h1>iPhone 6</h1>
-          </div>
-          <div class="samsung exynos">
-            <h1>Samsung s7</h1>
-          </div>
-          <div class="xiaomi snapdragon">
-            <h1>Xiaomi Redmi note 4x</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="user_container">
-      <div class="user_list">
-        <div class="card ml-3 mb-4" style="width: 19rem;">
-          <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            <p class="card-text">PHP example text to build on the card title and make up the bulk of the card's
               content.</p>
-
           </div>
         </div>
-        <div class="card ml-3 mb-4" style="width: 19rem;">
 
-          <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
+        <div class="card ml-3 mb-4 user php" style="width: 19rem;">
+          <div class="mx-auto">
+            <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            <p class="card-text">PHP EXAMPLE text to build on the card title and make up the bulk of the card's
               content.</p>
-
           </div>
         </div>
-        <div class="card ml-3 mb-4" style="width: 19rem;">
-          <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
+
+        <div class="card ml-3 mb-4 user symfony" style="width: 19rem;">
+          <div class="mx-auto">
+            <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            <p class="card-text">Symfony EXAMPLE example text to build on the card title and make up the bulk of the
+              card's
               content.</p>
-
           </div>
         </div>
-        <div class="card ml-3 mb-4" style="width: 19rem;">
-          <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
+        <div class="card ml-3 mb-4 user react" style="width: 19rem;">
+          <div class="mx-auto">
+            <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
+          </div>
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            <p class="card-text">React EXAMPLE text to build on the card title and make up the bulk of the card's
               content.</p>
 
           </div>
         </div>
 
-        <div class="card ml-3 mb-4" style="width: 19rem;">
-          <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-
+        <div class="card ml-3 mb-4 user react" style="width: 19rem;">
+          <div class="mx-auto">
+            <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
           </div>
-        </div>
-        <div class="card ml-3 mb-4" style="width: 19rem;">
-
-          <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-
-          </div>
-        </div>
-        <div class="card ml-3 mb-4" style="width: 19rem;">
-          <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-
-          </div>
-        </div>
-        <div class="card ml-3 mb-4" style="width: 19rem;">
-          <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            <p class="card-text">React EXAMPLE text to build on the card title and make up the bulk of the card's
               content.</p>
           </div>
         </div>
-      </div>
-    </div>
+
+        <div class="card ml-3 mb-4 user symfony" style="width: 19rem;">
+          <div class="mx-auto">
+            <img class="users img-rounded mx-auto mt-2" src="images/dd.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Symfony EXAMPLE text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 
- 
   <div class="popup" id="popup">
     <div class="popup-inner">
       <div class="popup__photo">
@@ -230,16 +202,19 @@
       <li>Mentions légales</li>
       <li>CGU</li>
     </ul>
-
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="./html-css-js/js/navbar.js"></script>
-<script src="./html-css-js/js/search.js"></script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+  <script src="./html-css-js/js/navbar.js"></script>
+  <script src="./html-css-js/js/user_filter.js"></script>
 </body>
 
 
