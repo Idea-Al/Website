@@ -27,19 +27,10 @@ html, body {
 }
 
 }
-.container2 {
-  z-index: 5;
-  background-color: #9191E9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999 ;
-}
+
 
 .popup {
- 
+  color: #0A0A0A;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,8 +52,8 @@ html, body {
   right: -100vh;
   display: flex;
   align-items: center;
-  max-width: 800px;
-  max-height: 600px;
+  /* max-width: 800px;
+  max-height: 600px; */
   width: 60%;
   height: 80%;
   background-color: #fff;
@@ -126,6 +117,11 @@ html, body {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
+}
+
+.btn_modal{
+  display: inline;
+  min-height: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

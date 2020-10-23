@@ -26,17 +26,17 @@
 
 <body>
   <!-- Nav -->
-  <nav class="navbar navbar-expand-lg navbar-light justify-content-between fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light justify-content-between fixed-top stroke">
     <div class="order-lg-1">
       <button class="navbar-toggler" type="button" data-trigger="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="navbar-collapse left" id="menu">
         <div class="offcanvas-header mt-3">
-          <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+          <button class="btn btn-outline-danger btn-close float-right">&times</button>
         </div>
-        <ul class="navbar-nav">
-          <li class="nav-item active"> <a class="nav-link" href="user_list.html"> Idealiseurs </a> </li>
+        <ul class="navbar-nav nav_left">
+          <li class="nav-item"> <a class="nav-link" href="user_list.html"> Idealiseurs </a> </li>
           <li class="nav-item"><a class="nav-link" href="#"> Projets</a></li>
         </ul>
       </div>
@@ -54,11 +54,11 @@
       <div class="navbar-collapse right" id="log">
 
         <div class="offcanvas-header mt-3">
-          <button class="btn btn-outline-danger btn-close float-right"> &times Close </button>
+          <button class="btn btn-outline-danger btn-close float-right">&times</button>
         </div>
 
-        <ul class="navbar-nav ">
-          <li class="nav-item active "> <a class="nav-link button" href="#popup"> Se connecter </a> </li>
+        <ul class="navbar-nav nav_right">
+          <li class="nav-item"> <a class="nav-link button" href="#popup"> Se connecter </a> </li>
           <li class="nav-item"><a class="nav-link" href="#"> S'inscrire</a></li>
         </ul>
       </div> <!-- navbar-collapse.// -->
@@ -81,9 +81,9 @@
               <blockquote class="card-blockquote">
                 <div id="chatbot">
                   <div class="fakechatbot-message perso_1" data-pause="1000"><strong><i class="fa fa-user"></i>
-                      User:</strong> Hello!</div>
-                  <div class="fakechatbot-message  perso_2" data-pause="2000"><strong><i class="fa fa-android"></i>
-                      Bot:</strong> Good morning! How can I help you?</div>
+                      AdrienM:</strong> Hey salut, j'ai vu que tu avais besoin d'un développeur React pour ton projet, c'est toujours le cas?</div>
+                  <div class="fakechatbot-message  perso_2" data-pause="2000"><strong><i class="fa fa-user"></i>
+                      Samus:</strong> Salut Adrien, oui c'est toujours le cas ! Partant pour rejoindre l'équipe?</div>
                   <div class="fakechatbot-message  perso_1" data-pause="1500"><strong><i class="fa fa-user"></i>
                       User:</strong> Do you want to join us?</div>
                   <div class="fakechatbot-message perso_2" data-pause="1000"><strong><i class="fa fa-android"></i>
@@ -207,7 +207,6 @@
 
   </section>
   <!-- modal signin -->
-  <div class="container2">
     <div class="popup" id="popup">
       <div class="popup-inner">
         <div class="popup__photo">
@@ -231,16 +230,15 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn_modal btn-primary">Submit</button>
           </form>
         </div>
         <a class="popup__close" href="#">X</a>
       </div>
     </div>
-  </div>
 
   <!-- footer -->
-  <footer class="container d-flex justify-content-between">
+  <footer class="container d-flex justify-content-between pt-3">
     <ul class="footer">
       <li>Nous contacter</li>
       <li>Qui sommes nous ?</li>
@@ -262,6 +260,7 @@
 <script src="./html-css-js/js/fakechatbot.js"></script>
 <script src="./html-css-js/js/navbar.js"></script>
 <script type="text/javascript" src="./html-css-js/tiny-slider/dist/min/tiny-slider.js"></script>
+<script type="text/javascript" src="./html-css-js/js/search.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function () {

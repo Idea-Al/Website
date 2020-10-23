@@ -8,6 +8,7 @@
       console.log(trigger_id);
       $(trigger_id).toggleClass("show");
       $('body').toggleClass("offcanvas-active");
+
     });
 
 
