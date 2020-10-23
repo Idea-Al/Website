@@ -121,6 +121,7 @@ html, body {
 
 .btn{
   display: inline;
+  min-height: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */
