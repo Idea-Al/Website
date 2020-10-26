@@ -28,7 +28,7 @@
         </div>
         <ul class="navbar-nav nav_left">
           <li class="nav-item"> <a class="nav-link" href="index.html"> Homepage </a> </li>
-          <li class="nav-item"><a class="nav-link" href="#"> Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="project_list.html"> Projets</a></li>
         </ul>
       </div>
     </div>
@@ -61,35 +61,51 @@
   </div>
   <div class="container d-flex position-relative">
     <aside class="filter_user aside_user ">
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-        aria-expanded="false" aria-controls="collapseExample">
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseUserList"
+        aria-expanded="false" aria-controls="collapseUserList">
         Filtrer les utilisateurs
       </button>
-      <div class="collapse" id="collapseExample">
-        <div class="filter">
-          <h3>Métier</h3>
-          <div>
-            <div><input type="checkbox" name="job" value="starting" id="starting"><label for="starting">Web
-                développeur</label></div>
-            <div><input type="checkbox" name="job" value="reserves" id="reserves"><label for="reserves">Web
-                designer</label></div>
-          </div>
-          <h3>Technos/Outils</h3>
-          <div>
-            <div><input type="checkbox" name="techno" value="php" id="php"><label for="guard">Php</label></div>
-            <div><input type="checkbox" name="techno" value="react" id="react"><label for="forward">React</label></div>
-            <div><input type="checkbox" name="techno" value="symfony" id="symfony"><label for="centered">Symfony</label>
+      <div class="collapse" id="collapseUserList">
+        <div class="filter_item">
+          <div class="d-flex arrowTrigger collapsed justify-content-between" data-target="#filter_job"
+            data-toggle="collapse">
+            <h3>Métier</h3>
+            <div class="align-items-center ml-3">
+              <i class="fa fa-arrow-right arrow turnUp"></i>
             </div>
           </div>
-          <h3>Méthode</h3>
-          <div>
+          <div id="filter_job" class="collapse">
+            <div><input type="checkbox" name="job" value="developer" id="developer"><label for="developer">Web
+                développeur</label></div>
+            <div><input type="checkbox" name="job" value="designer" id="designer"><label for="designer">Web
+                designer</label></div>
+          </div>
+          <div class="d-flex arrowTrigger collapsed justify-content-between" data-target="#filter_techno"
+            data-toggle="collapse">
+            <h3>Technos/Outils</h3>
+            <div class="align-items-center ml-3">
+              <i class="fa fa-arrow-right arrow turnUp"></i>
+            </div>
+          </div>
+          <div id="filter_techno" class="collapse">
+            <div><input type="checkbox" name="techno" value="php" id="php"><label for="php">Php</label></div>
+            <div><input type="checkbox" name="techno" value="react" id="react"><label for="react">React</label></div>
+            <div><input type="checkbox" name="techno" value="symfony" id="symfony"><label for="symfony">Symfony</label>
+            </div>
+          </div>
+          <div class="d-flex arrowTrigger collapsed justify-content-between" data-target="#filter_method"
+            data-toggle="collapse">
+            <h3>Méthode</h3>
+            <div class="align-items-center ml-3">
+              <i class="fa fa-arrow-right arrow turnUp"></i>
+            </div>
+          </div>
+          <div id="filter_method" class="collapse">
             <div><input type="checkbox" name="method" value="agile" id="agile"><label for="agile">Agile</label></div>
             <div><input type="checkbox" name="method" value="scrum" id="scrum"><label for="scrum">Scrum</label></div>
           </div>
-
-
+        </div>
     </aside>
-
     <main class="user_container">
       <section class="user_list">
         <div class="card ml-3 mb-4 user php" style="width: 19rem;">
@@ -215,6 +231,23 @@
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
   <script src="./html-css-js/js/navbar.js"></script>
   <script src="./html-css-js/js/user_filter.js"></script>
+
+  <script>
+    var arrowsTrigger = document.querySelectorAll('.arrowTrigger')
+    arrowsTrigger.forEach(function (arrowTrigger) {
+      arrowTrigger.addEventListener('click', function () {
+        var upClass = 'turnUp';
+        var downClass = 'turnDown';
+        var arrow = arrowTrigger.querySelector('.arrow')
+        if (~arrow.className.indexOf(downClass)) {
+          arrow.className = arrow.className.replace(downClass, upClass);
+        } else {
+          arrow.className = arrow.className.replace(upClass, downClass);
+        }
+
+      })
+    });
+  </script>
 </body>
 
 

@@ -12,6 +12,7 @@ var checked = {};
 getChecked('job');
 getChecked('techno');
 getChecked('method');
+getChecked('category')
 
 Array.prototype.forEach.call(allCheckboxes, function (el) {
   el.addEventListener('change', toggleCheckbox);
@@ -33,7 +34,8 @@ function setVisibility() {
     var job = checked.job.length ? _.intersection(Array.from(el.classList), checked.job).length : true;
     var techno = checked.techno.length ? _.intersection(Array.from(el.classList), checked.techno).length : true;
     var method = checked.method.length ? _.intersection(Array.from(el.classList), checked.method).length : true;
-    if (job && techno && method){
+    var category = checked.category.length ? _.intersection(Array.from(el.classList), checked.category).length : true;
+    if (job && techno && method && category){
       el.style.display = 'flex';
     } else {
       el.style.display = 'none';
