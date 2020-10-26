@@ -9,6 +9,13 @@ body {
 
 
 /*USER FILTER */
+
+.filter_item{
+	width: 100%;
+}
+.arrow{
+	justify-content: space-between !important;
+}
 .aside_user {
     padding: 0 1em;
   }
@@ -284,17 +291,19 @@ figcaption h6 {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding-left: 145px;
+	padding-left: 18%;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
 @media (min-width: 992px) {
 	.btn {
 		display: none;
 	}
 
-	#collapseExample {
+	#collapseUserList {
+		display: block;
+	}
+	#collapseProjectList{
 		display: block;
 	}
 }
@@ -428,3 +437,34 @@ nav {
 	-moz-animation: fill 1s forwards;
 	opacity: 1;
   }
+
+
+
+  
+
+  /* TEST */
+  .fa-arrow-right {
+	transition: transform 0.4s linear;
+  }
+
+   .turn {
+	transform: rotate(90deg);
+  }
+
+
+  .turnDown {
+	transform: rotate(90deg);
+  }
+  
+  
+  .turnUp {
+	transform: rotate(0deg);
+  }
+
+.filter_item .collapse {
+ 	transition: transform 0.4s linear;
+}
+
+.show{
+	transform: translate(100deg);
+}
