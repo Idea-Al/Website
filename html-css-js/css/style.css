@@ -25,12 +25,12 @@ body {
   input {
     margin-right: 5px;
   }
-  /*   */
+
 
 .container {
 	min-width: 100% !important;
 	max-height: 100% !important;
-}
+} 
 
 nav {
 	position: fixed;
@@ -38,22 +38,6 @@ nav {
 	background-color: #6184D8;
 	/* height: 3.5rem; */
 }
-/* 
-
-nav a {
-	
-	color: #9CEC5B !important;
-	transition:  600ms;
-
-} 
-/* 
-nav a:hover{
-	border: #FAA300 solid 1px;
-	margin: auto;
-	padding: auto;
-	
-	/* border-radius: 25%; 
-} */
 
 
 /* navbar */
@@ -468,3 +452,27 @@ nav {
 .show{
 	transform: translate(100deg);
 }
+
+
+
+
+/* User */
+
+.profil{
+	min-width: 80%;
+	width: 80%;
+	font-size: 8px !important;
+	
+  } 
+
+.profil_info{
+	text-align: center;
+}
+
+
+.profil_info_item{
+	  display: flex;
+	  text-align: center;
+	  flex-direction: column;
+	  padding: 0 4px;
+  }
