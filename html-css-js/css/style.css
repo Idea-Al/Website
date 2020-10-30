@@ -2,7 +2,7 @@
 body {
 	background-color: hsl(201, 85%, 31%);
 	color: #fcfcfc;
-	padding-top: 4.5rem;
+	padding-top: 3.7rem;
 	margin: auto;
 }
 
@@ -478,3 +478,48 @@ nav {
 	  margin-left: 0px;
 	  margin-right: 0px;
   }
+
+.user_background{
+	background-image: url('../css/bg-test.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.user_avatar{
+	width: 100%;
+	height: auto;
+	border-radius: 25%;
+}
+.position_div{
+	position: relative;
+	width: 55%;
+	height: auto;
+}
+.position_available{
+	position: absolute;
+	left: 225px;
+	padding: 5px;
+	border: 2px solid white;
+	border-radius: 25%;
+	background-color: rgb(33, 185, 84);
+	
+}
+
+.user_page{
+	padding: 0 !important;
+	margin-top: 0 !important;
+}
+
+.item_profil{
+	padding: 0px !important;
+}
+
+@media (max-width:992px){
+	.position_div{
+		width: 60%;
+	}
+	.position_available{
+		left: 200px;
+	}
+}
+
