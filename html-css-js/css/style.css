@@ -461,7 +461,7 @@ nav {
 .profil{
 	min-width: 80%;
 	width: 80%;
-	font-size: 8px !important;
+	font-size: 10px !important;
 	
   } 
 
@@ -474,5 +474,7 @@ nav {
 	  display: flex;
 	  text-align: center;
 	  flex-direction: column;
-	  padding: 0 4px;
+	  padding: 0 3px; 
+	  margin-left: 0px;
+	  margin-right: 0px;
   }
