@@ -89,6 +89,10 @@ body.offcanvas-active {
 	footer {
 		text-align: center;
 	}
+
+	.user_info a {
+		display: inline !important;
+	}
 }
 
 
@@ -155,16 +159,16 @@ img.scaled {
 	object-fit: cover;
 
 }
-
-img.users {
+/* 
+img.users_pic {
 	width: 200px;
 	height: 200px;
 }
 
-img.projects {
+img.projects_pic {
 	width: 200px;
 	height: 200px;
-}
+} */
 
 
 img.img-rounded {
@@ -480,29 +484,44 @@ nav {
   }
 
 .user_background{
-	background-image: url('../css/bg-test.jpg');
+	background-image:linear-gradient(#ffffff1a, rgba(255, 255, 255, 0.199)),url('../css/bg-test.jpg') ;
 	background-size: cover;
+	padding: 0;
 	background-repeat: no-repeat;
-	
+	padding-top: 1em;	
 }
 .user_avatar{
-	width: 100%;
+	
+	width: 180px;
 	height: auto;
-	border-radius: 25%;
+	border-radius: 25% 15% 25% 25%;
 }
 .position_div{
 	position: relative;
-	width: 55%;
 	height: auto;
+	justify-content: center;
 }
+
+
+
 .position_available{
 	position: absolute;
-	left: 225px;
+	left: 170px;
+	top: -5px;
+	width: 30px;
+	height: 30px;
 	padding: 5px;
 	border: 2px solid white;
-	border-radius: 25%;
-	background-color: rgb(33, 185, 84);
+	border-radius: 50%;
 	
+}
+
+.position_available.dispo{
+	background-color: rgb(33, 185, 84);
+}
+
+.position_available.indispo{
+	background-color: rgb(238, 11, 11);
 }
 
 .user_page{
@@ -512,14 +531,42 @@ nav {
 
 .item_profil{
 	padding: 0px !important;
+
+}
+.user_info a {
+	display: inline-block;
+	color:white;
+	transition: all 1s;
 }
 
-@media (max-width:992px){
-	.position_div{
-		width: 60%;
-	}
-	.position_available{
-		left: 200px;
-	}
+.user_info a:hover{
+	color:red;
+	width: 200px;
+	transform: scale(1.2,1.2)
 }
 
+/* 
+.user_info a:hover {
+	animation: shake 0.42s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 100px;
+  }
+  
+  @keyframes shake {
+	10% {
+	  transform: translate3d(-1px, 0, 0);
+	}
+	
+	20% {
+	  transform: translate3d(2px, 0, 0);
+	}
+  
+	50% {
+	  transform: translate3d(-1px, 0, 0);
+	}
+  
+	 70% {
+	  transform: translate3d(1px, 0, 0);
+	}
+  } */
