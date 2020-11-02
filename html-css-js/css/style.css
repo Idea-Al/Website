@@ -590,7 +590,7 @@ nav.fill ul li a:hover:after {
 	width: 6em;
 	position: relative;
 	background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
-
+	
 }
 
 .baloon:before {
@@ -611,9 +611,8 @@ nav.fill ul li a:hover:after {
 .baloon_big {
 	height: 8em;
 	width: 8em;
-	margin:1rem auto;
+	margin: 0px 0px 0 40px;
 	background: linear-gradient(circle at 100px 100px, blue, white);
-	
 }
 
 
