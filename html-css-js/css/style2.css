@@ -33,6 +33,7 @@ input {
 .container {
 	min-width: 100% !important;
 	max-height: 100% !important;
+	padding: 0 !important;
 }
 
 nav {
@@ -42,7 +43,14 @@ nav {
 	/* height: 3.5rem; */
 }
 
+#more {display: none;}
 
+#actionLink{
+	text-decoration: underline;
+}
+#actionLink:hover{
+	color:blue;
+}
 /* navbar */
 body.offcanvas-active {
 	overflow: hidden;
@@ -506,17 +514,28 @@ nav.fill ul li a:hover:after {
 }
 
 .user_background {
+	width: 100%;
+	height: 250px;
+	display: flex;
+	align-self: center;
 	background-image: linear-gradient(#ffffff1a, rgba(255, 255, 255, 0.199)), url('../css/bg-test.jpg');
 	background-size: cover;
 	padding: 0;
 	background-repeat: no-repeat;
-	background-position: 100% 65%;
-	padding-top: 1em;
+	background-position: 10% 46%;
+}
+.user_content{
+	width: 90%;
+	margin: auto;
+}
+.div_img{
+	
+	width: 40%;
 }
 
 .user_avatar {
 
-	width: 50%;
+	width: 100%;
 	height: auto;
 	border-radius: 25% 15% 25% 25%;
 }
@@ -550,6 +569,7 @@ nav.fill ul li a:hover:after {
 
 
 @media(max-width: 992px) {
+	
 	.user_avatar {
 		width: 40%;
 	}
@@ -579,6 +599,34 @@ nav.fill ul li a:hover:after {
 	color: red;
 	width: 200px;
 	transform: scale(1.2, 1.2)
+}
+
+
+@media(max-width:992px){
+
+	.user_background {	
+		height: 50vh;
+	}
+	.div_img{
+		padding-top: 1em;
+		width: 100%;
+	}
+
+
+.user_avatar{
+	width: 60%;
+	display: flex;
+	margin: auto !important;
+}
+.user_content{
+	flex-direction: column;	
+	width: 100% !important;
+}
+.user_content_picture{
+	flex-direction: column;
+	margin: auto;
+	width: 100% !important;
+}
 }
 
 .baloon {
