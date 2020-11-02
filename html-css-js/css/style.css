@@ -3,6 +3,8 @@ body {
 	color: #fcfcfc;
 	padding-top: 3.7rem;
 	margin: auto;
+	font-family: 'Oswald', sans-serif;
+
 }
 
 
@@ -101,7 +103,7 @@ body.offcanvas-active {
 
 #logo {
 	width: 120px;
-	color: #F9C22E;
+	color: #d3a72e;
 }
 
 /* END navbar */
@@ -559,6 +561,61 @@ nav.fill ul li a:hover:after {
 	}
 }
 
+.contact_style{
+	
+	display: inline-block;
+	width: 200px;
+	padding: 8px;
+	color: #fff;
+	border: 1px solid #fff;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+  
+}
+
+.contact_style {
+display: inline-block;
+width: 70%;
+padding: 8px 2px;
+background-color: #fff;
+border: 2px solid #fff;
+border-radius: 10px;
+text-align: center;
+outline: none;
+text-decoration: none;
+transition: background-color 0.2s ease-out,
+			color 0.2s ease-out;
+}
+
+.contact_style a {
+color: #5533FF;
+font-weight: bold;
+text-transform: uppercase;
+text-decoration: none;
+}
+.contact_style:hover,
+.contact_style:active {
+background-color: #5533FF;
+transition: background-color 0.3s ease-in,
+			color 0.3s ease-in;
+}
+
+.contact_style:hover a {
+color: #fff;
+
+}
+@media(max-width: 992px){
+.contact_style{
+	width: 100%;
+}
+.contact_style a{
+	font-size: 12px
+}
+}
+
+
+
 .user_page {
 	padding: 0 !important;
 	margin-top: 0 !important;
@@ -569,28 +626,17 @@ nav.fill ul li a:hover:after {
 
 }
 
-.user_info a {
-	display: inline-block;
-	color: white;
-	transition: all 1s;
-}
-
-.user_info a:hover {
-	color: red;
-	width: 200px;
-	transform: scale(1.2, 1.2)
-}
 
 .baloon {
 
 	display: block;
-	background: black;
 	border-radius: 50%;
-	height: 6em;
-	width: 6em;
+	height: 4.5em;
+	width: 4.5em;
 	position: relative;
 	background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
-	
+	font-size: 10px;
+
 }
 
 .baloon:before {
@@ -598,8 +644,8 @@ nav.fill ul li a:hover:after {
 	position: absolute;
 	top: 1%;
 	left: 5%;
-	width: 90%;
-	height: 90%;
+	width: 40%;
+	height: 40%;
 	border-radius: 50%;
 	background: radial-gradient(circle at 50% 0px, #ffffff, rgba(255, 255, 255, 0) 58%);
 	filter: blur(5px);
@@ -609,35 +655,39 @@ nav.fill ul li a:hover:after {
 
 
 .baloon_big {
-	height: 8em;
-	width: 8em;
-	margin: 0px 0px 0 40px;
+	height: 5em;
+	width: 5em;
+	margin:1rem auto;
 	background: linear-gradient(circle at 100px 100px, blue, white);
+	
 }
 
+.user_description{
+	width: 70%;
+	margin-left : 2rem;
+	padding: 20px;
+	text-align:center;
+	background : rgba(214, 218, 221, 0.314);
+	color: black;
+	border-radius: 10px;
 
-/* 
-.user_info a:hover {
-	animation: shake 0.42s cubic-bezier(.36,.07,.19,.97) both;
-	transform: translate3d(0, 0, 0);
-	backface-visibility: hidden;
-	perspective: 100px;
-  }
-  
-  @keyframes shake {
-	10% {
-	  transform: translate3d(-1px, 0, 0);
-	}
-	
-	20% {
-	  transform: translate3d(2px, 0, 0);
-	}
-  
-	50% {
-	  transform: translate3d(-1px, 0, 0);
-	}
-  
-	 70% {
-	  transform: translate3d(1px, 0, 0);
-	}
-  } */
+}
+
+.user_tools { 
+	margin-top: 2em;
+	padding: 20px;
+	align-self: flex-end;
+	width: 80%;
+	margin-right:2rem;
+	background : rgba(214, 218, 221, 0.314);
+	color: black;
+	border-radius: 10px;
+}
+
+.user_tools li{
+	margin:auto;
+}
+
+.user_tools li:hover{
+background-image: blue;
+}

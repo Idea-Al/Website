@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +14,11 @@
     <link rel="stylesheet" href="html-css-js/css/style.css">
     <link rel="stylesheet" href="html-css-js/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="html-css-js/css/fakechatbot.css" />
 
 
 </head>
-
 <body>
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg navbar-light justify-content-between fixed-top stroke">
@@ -81,19 +80,17 @@
 
             <div class="d-flex col-md-8 col-12 mx-auto text-center user_info">
                 
-
-                <div class="col-3 mx-auto item_profil send_message">
-                    <div>Contacter</div>
-                    <div><a href=""><i class="fa fa-paper-plane" aria-hidden="true"></i></a></div>
+                <div class="col-1"></div>
+                <div class="col-4 mx-auto item_profil send_message">
+                    <div class="contact_style" ><a href="">Contacter</a></div>
+                    <!--<div><a href=""><i class="fa fa-paper-plane" aria-hidden="true"></i></a></div> -->
                 </div>
-                <div class="col-6 mx-auto item_profil">
-                    <div>Projets finis</div>
-                    <div>4</div> <!-- Projet total/ projet fini||| -->      
+                
+                <div class="col-4 mx-auto item_profil add_friend">
+                        <div class="contact_style"><a href="">Ajouter</a></div>
+                       <!-- <div><i class="fa fa-user-plus" aria-hidden="true"></i></a></div> -->
                 </div>
-                <div class="col-3  item_profil add_friend">
-                        <div>Ajouter</div>
-                        <div><a href=""><i class="fa fa-user-plus" aria-hidden="true"></i></a></div>
-                </div>
+                <div class="col-1"></div>
             </div>
 
         </div>
@@ -104,7 +101,7 @@
     <div>
         <div class="d-flex justify-content-around w-100 text-center">
             <div class="baloon baloon_top d-flex"> 
-                <p class="align-self-center mx-auto">Idéaliseurs <br>5</p>
+                <p class="align-self-center mx-auto">Like <br>reçu <br>5</p>
             </div>
             <div class="baloon baloon_mid d-flex">
                 <p class=" align-self-center mx-auto">Amis <br>5</p>
@@ -112,6 +109,51 @@
         </div>
         <div class="baloon baloon_big d-flex">
             <p class="align-self-center mx-auto">Projet réalisé</p>
+        </div>
+    </div>
+    <div class="d-flex flex-column">
+        <div class="user_description">
+            <h2>Description</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reiciendis pariatur, accusantium iusto saepe quis nesciunt eum esse velit dolor odio recusandae quo optio quae necessitatibus nulla maxime ex neque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel dolores illum unde quaerat, officiis quos. Vitae mollitia aut, asperiores labore consequatur enim ea quam. Facilis quibusdam ut ad nemo!
+            </p>
+        </div>
+        <div class="user_tools ">
+            <h2 class="text-center">Technos/outils</h2>
+            <ul class="d-flex justify-content-between flex-wrap">
+               <li>
+                   <div class="d-flex flex-column">
+                        HTML <img src="images/logo/html-5.png">
+                    </div>
+                </li>
+                <li>
+                    <div class="d-flex flex-column">
+                         PHP <img src="images/logo/php.png">
+                     </div>
+                 </li>
+                 <li>
+                    <div class="d-flex  flex-column">
+                         Bootstrap <img src="images/logo/bootstrap.png">
+                     </div>
+                 </li>
+                 <li>
+                    <div class="d-flex flex-column">
+                         Javascript <img src="images/logo/javascript.png">
+                     </div>
+                 </li>
+                 <li>
+                    <div class="d-flex flex-column">
+                         Symfony <img src="images/logo/symfony.png">
+                     </div>
+                 </li>
+                 <li>
+                    <div class="d-flex flex-column">
+                         MySQl <img src="images/logo/mysql.png">
+                     </div>
+                 </li>
+
+
+
+            </ul>
         </div>
     </div>
     <!-- modal signin -->
