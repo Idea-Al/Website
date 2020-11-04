@@ -1,5 +1,5 @@
 body {
-	background-color: hsl(201, 85%, 31%);
+	background-color: #0041a3;
 	color: #fcfcfc;
 	padding-top: 3.7rem;
 	margin: auto;
@@ -240,7 +240,7 @@ figcaption h6 {
 }
 
 
-/* just a div for the top of the user list*/
+/* just a div for the top of rtjhet user list*/
 
 .top_div {
 	height: 8em;
@@ -513,7 +513,7 @@ nav.fill ul li a:hover:after {
 	padding: 0;
 	background-repeat: no-repeat;
 	background-position: 100% 65%;
-	padding-top: 1em;
+	padding-top: 2em;
 }
 
 .user_avatar {
@@ -566,11 +566,12 @@ nav.fill ul li a:hover:after {
 	display: inline-block;
 	width: 200px;
 	padding: 8px;
-	color: #fff;
 	border: 1px solid #fff;
 	text-align: center;
 	outline: none;
 	text-decoration: none;
+	color: #5533FF;
+
   
 }
 
@@ -588,7 +589,7 @@ transition: background-color 0.2s ease-out,
 			color 0.2s ease-out;
 }
 
-.contact_style a {
+.user_info a {
 color: #5533FF;
 font-weight: bold;
 text-transform: uppercase;
@@ -597,14 +598,11 @@ text-decoration: none;
 .contact_style:hover,
 .contact_style:active {
 background-color: #5533FF;
+color: white;
 transition: background-color 0.3s ease-in,
 			color 0.3s ease-in;
 }
 
-.contact_style:hover a {
-color: #fff;
-
-}
 @media(max-width: 992px){
 .contact_style{
 	width: 100%;
@@ -612,13 +610,6 @@ color: #fff;
 .contact_style a{
 	font-size: 12px
 }
-}
-
-
-
-.user_page {
-	padding: 0 !important;
-	margin-top: 0 !important;
 }
 
 .item_profil {
@@ -670,6 +661,7 @@ color: #fff;
 	background : rgba(214, 218, 221, 0.314);
 	color: black;
 	border-radius: 10px;
+	border: 2px solid whitesmoke
 
 }
 
@@ -677,17 +669,176 @@ color: #fff;
 	margin-top: 2em;
 	padding: 20px;
 	align-self: flex-end;
-	width: 80%;
+	width: 55%;
 	margin-right:2rem;
 	background : rgba(214, 218, 221, 0.314);
 	color: black;
 	border-radius: 10px;
+	border: 2px solid whitesmoke
 }
 
 .user_tools li{
+	display: flex;
+	flex-wrap: wrap;
 	margin:auto;
 }
 
+
 .user_tools li:hover{
 background-image: blue;
+}
+
+
+.user_project{
+	margin-top: 2em;
+	padding: 20px;
+	width: 100%;
+}
+.svg--icon {
+	width: 2rem;
+	margin: auto;
+	transition:0.2s;
+}
+
+.svg--icon:hover {
+	transform:scale(1.2);
+	transition:0.5s;
+}
+
+.svg--icon:hover path{
+	fill: rgb(163, 255, 0);
+}
+.svg--icon--small {
+	width: 3.5rem;
+	margin: auto;
+}
+
+@media (min-width:1200px) {
+	.svg--icon {
+		width: 3rem;
+	}
+	.svg--icon--small {
+		width: 4rem;
+		margin: auto;
+	}
+}
+
+@media (max-width:992px) {
+	.svg--icon {
+		width: 1.5rem;
+		
+	}
+}
+
+
+.container_project{
+	padding-top: 1rem;
+	width: 100%;
+}
+
+.screen_project{
+	position: relative;
+	width:600px;
+	height: 300px;
+	overflow: hidden;
+	border: black 2px solid;
+    border-radius: 10px;
+	box-shadow: 10px 10px 30px #003f8e;
+}
+
+
+.screen_project img{
+	width: 600px;
+	height: 300px;
+}
+
+#user_projects > .tns-item {
+	width:auto !important;
+}
+
+.info_container{
+	display: flex;
+}
+
+.test_box{
+	flex-direction: column;
+	margin:auto;
+	padding-top: 15%;
+}
+.show_project_info{
+	background :rgba(140, 140, 207, 0.5);
+	width :100%;
+	height:100%;
+    position:absolute;
+    bottom: 0;
+	left: 0; 
+	animation-duration: 1s;
+	animation-name: mouseover;
+	/* animation-direction: alternate; */
+}
+
+.show_project_info_mobile{
+	background :rgba(140, 140, 207, 0.5);
+	width :100%;
+	height:100%;
+    position:relative;
+    bottom: 0;
+	left: 0; 
+}
+.project_info_hide {
+	animation-duration: 5s;
+	animation-name: mouseout;
+} 
+
+
+@keyframes mouseover{
+	from{
+		opacity: 0;
+		bottom:0 ;
+		left:0;
+		height: 10%;
+	}
+	100%{
+		opacity: 1;
+		height: 100%;
+	}
+}
+
+
+ @keyframes mouseout{
+	from{
+		opacity: 1;
+		left:0;
+		height: 100%;
+	}
+	100%{
+		opacity: 0;
+		top:100%;
+	}
+}
+ 
+
+
+
+
+@media(max-width: 992px){
+
+	.user_description, .user_project, .user_tools, .test_project_div{
+		width: 95%;
+		margin:  1rem auto !important;
+		padding: 15px;
+	}
+
+
+	.screen_project, .screen_project img{
+		height: 100%;
+		width:100%;
+		/* height: auto;
+		padding: 0 !important; */
+	}
+
+	 .show_project_info{
+		display:none;
+	}
+
 }
