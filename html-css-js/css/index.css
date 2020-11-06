@@ -8,27 +8,6 @@ html, body {
   font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
-  .popup-inner {
-    flex-direction: column;
-    align-items: baseline;
-    width: 80% !important;
-  }
-  .popup__text{
-    width: auto !important;
-    padding: 2rem !important;
-  }
-  .popup__photo img {
-    width: 100% !important;
-    height: 100% !important;
-}
-.popup__photo{
-  width: 100% !important;
-}
-
-}
-
-
 .popup {
   color: #0A0A0A;
   display: flex;
@@ -46,20 +25,20 @@ html, body {
   overflow: hiden;
   transition: 0.64s ease-in-out;
 }
+
 .popup-inner {
   position: relative;
   bottom: -100vw;
   right: -100vh;
   display: flex;
   align-items: center;
-  /* max-width: 800px;
-  max-height: 600px; */
   width: 60%;
   height: 80%;
   background-color: #fff;
   transform: rotate(32deg);
   transition: 0.64s ease-in-out;
 }
+
 .popup__photo {
   display: flex;
   justify-content: flex-end;
@@ -68,10 +47,12 @@ html, body {
   height: 100%;
   overflow: hidden;
 }
+
 .popup__photo img {
   width: auto;
   height: 100%;
 }
+
 .popup__text {
   display: flex;
   flex-direction: column;
@@ -80,6 +61,7 @@ html, body {
   height: 100%;
   padding: 4rem;
 }
+
 .popup__text h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -87,20 +69,24 @@ html, body {
   text-transform: uppercase;
   color: #0A0A0A;
 }
+
 .popup__text p {
   font-size: 0.875rem;
   color: #686868;
   line-height: 1.5;
 }
+
 .popup:target {
   visibility: visible;
   opacity: 1;
 }
+
 .popup:target .popup-inner {
   bottom: 0;
   right: 0;
   transform: rotate(0);
 }
+
 .popup__close {
   position: absolute;
   right: -1rem;
@@ -125,4 +111,38 @@ html, body {
 }
 
 /*# sourceMappingURL=index.css.map */
+
+
+/* FAKE CONV AND PRESENTATION */
+.fake_conv {
+	min-height: 30vh;
+}
+
+.presentation {
+	padding: 100px 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+
+  .popup-inner {
+    flex-direction: column;
+    align-items: baseline;
+    width: 80% !important;
+  }
+
+  .popup__text{
+    width: auto !important;
+    padding: 2rem !important;
+  }
+
+  .popup__photo img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .popup__photo{
+    width: 100% !important;
+  }
+}
 

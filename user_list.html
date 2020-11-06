@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ideal - Idéaliseur</title>
-
   <link rel="stylesheet" href="/html-css-js/css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -60,8 +59,9 @@
   <div class="top_div">
 
   </div>
+
   <div class="container d-flex position-relative">
-    <aside class="filter_user aside_user ">
+    <aside class="filter">
       <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseUserList"
         aria-expanded="false" aria-controls="collapseUserList">
         Filtrer les utilisateurs
@@ -72,7 +72,7 @@
             data-toggle="collapse">
             <h3>Métier</h3>
             <div class="align-items-center ml-3">
-              <i class="fa fa-arrow-right arrow turnUp"></i>
+              <i class="fa fa-arrow-right arrow arrow_right"></i>
             </div>
           </div>
           <div id="filter_job" class="collapse">
@@ -85,7 +85,7 @@
             data-toggle="collapse">
             <h3>Technos/Outils</h3>
             <div class="align-items-center ml-3">
-              <i class="fa fa-arrow-right arrow turnUp"></i>
+              <i class="fa fa-arrow-right arrow arrow_right"></i>
             </div>
           </div>
           <div id="filter_techno" class="collapse">
@@ -98,7 +98,7 @@
             data-toggle="collapse">
             <h3>Méthode</h3>
             <div class="align-items-center ml-3">
-              <i class="fa fa-arrow-right arrow turnUp"></i>
+              <i class="fa fa-arrow-right arrow arrow_right"></i>
             </div>
           </div>
           <div id="filter_method" class="collapse">
@@ -239,13 +239,13 @@
     var arrowsTrigger = document.querySelectorAll('.arrowTrigger')
     arrowsTrigger.forEach(function (arrowTrigger) {
       arrowTrigger.addEventListener('click', function () {
-        var upClass = 'turnUp';
-        var downClass = 'turnDown';
+        var arrowRight = 'arrow_right';
+        var arrowDown = 'arrow_down';
         var arrow = arrowTrigger.querySelector('.arrow')
-        if (~arrow.className.indexOf(downClass)) {
-          arrow.className = arrow.className.replace(downClass, upClass);
+        if (~arrow.className.indexOf(arrowDown)) {
+          arrow.className = arrow.className.replace(arrowDown, arrowRight);
         } else {
-          arrow.className = arrow.className.replace(upClass, downClass);
+          arrow.className = arrow.className.replace(arrowRight, arrowDown);
         }
 
       })

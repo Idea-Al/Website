@@ -66,11 +66,9 @@
         <div class="col-12 mx-auto pb-3 user_background">
             <div class="d-flex">
                 <div class="mx-auto">
-                    <div class="mx-auto d-flex position_div">
+                    <div class="mx-auto d-flex user_avatar_container">
                         <img class="user_avatar" src="./images/kira.png">
-                        <div class="position_available dispo">
-                            <!-- <div class="position_available indispo"> -->
-                            <span></span>
+                        <div class="user_status dispo">
                         </div>
                     </div>
                     <div class="col-12 mx-auto text-center pt-2">
@@ -80,19 +78,16 @@
                 </div>
             </div>
 
-            <div class="d-flex col-md-8 col-12 mx-auto text-center user_info">
-
+            <div class="d-flex col-md-8 col-12 mx-auto text-center user_interaction">
                 <div class="col-1"></div>
-
                 <a class="col-5 col-md-4 mx-auto" href="">
-                    <div class=" contact_style">
+                    <div class="action_button">
                         <div>Ajouter</div>
                         <!-- <div><i class="fa fa-user-plus" aria-hidden="true"></i></a></div> -->
                     </div>
                 </a>
-
                 <a class="col-5 col-md-4 mx-auto" href="">
-                    <div class="contact_style">
+                    <div class="action_button">
                         <div>Contacter</div>
                         <!-- <div><i class="fa fa-user-plus" aria-hidden="true"></i></a></div> -->
                     </div>
@@ -104,10 +99,10 @@
     <!-- Social information / count of realization -->
     <div>
         <div class="d-flex justify-content-around w-100 text-center">
-            <div class="baloon baloon_top d-flex">
+            <div class="baloon d-flex">
                 <p class="align-self-center mx-auto">Like <br>reçu <br>5</p>
             </div>
-            <div class="baloon baloon_mid d-flex">
+            <div class="baloon d-flex">
                 <p class=" align-self-center mx-auto">Amis <br>5</p>
             </div>
         </div>
@@ -116,8 +111,8 @@
         </div>
     </div>
     <!-- end of social information / count-->
-    <div class="d-flex flex-column">
-        <div class="user_description">
+    <div class="d-flex flex-column mx-3">
+        <div class="user_about_me">
             <h2>Description</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reiciendis pariatur, accusantium iusto saepe
                 quis nesciunt eum esse velit dolor odio recusandae quo optio quae necessitatibus nulla maxime ex neque.
@@ -125,124 +120,91 @@
                 quos. Vitae mollitia aut, asperiores labore consequatur enim ea quam. Facilis quibusdam ut ad nemo!
             </p>
         </div>
-        <div class="user_tools ">
+        <div class="user_tools">
             <h2 class="text-center">Technos/outils</h2>
-            <div class="d-flex flex-wrap justify-content-center">
-                <div class="d-flex flex-column mx-auto text-center">
-                    HTML <svg viewBox="0 0 128 128" class="svg--icon">
-                        <path fill="#1D294D"
-                            d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387 10.015-112.107h-109.936zm89.126 26.539l-.627 7.172-.276 3.289h-52.665000000000006l1.257 14h50.156000000000006l-.336 3.471-3.233 36.119-.238 2.27-28.196 7.749v.002l-.034.018-28.177-7.423-1.913-21.206h13.815000000000001l.979 10.919 15.287 4.081h.043v-.546l15.355-3.875 1.604-17.579h-47.698l-3.383-38.117-.329-3.883h68.939l-.33 3.539z">
-                        </path>
-                    </svg>
+            <div class="d-flex flex-wrap justify-content-center ">
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    HTML
+                    <img class="svg--icon" src="images/svg/html.svg">
                 </div>
-
-                <div class="d-flex flex-column mx-auto text-center">
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
                     PHP
-                    <svg viewBox="0 0 640 512" class="svg--icon svg--icon--small">
-                        <path fill="#1D294D"
-                            d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z">
-                        </path>
-                    </svg>
-
-
-
-
+                   <img class="svg--icon--small" src="images/svg/php.svg">
                 </div>
-
-                <div class="d-flex flex-column mx-auto text-center">
-                    <!-- Bootstrap <img src="images/logo_svg/bootstrap.svg"> -->
-
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
                     Bootstrap
-                    <svg viewBox="0 0 128 128" class="svg--icon">
-                        <path fill="#1D294D"
-                            d="M75.701 65.603c-2.334-.768-5.694-.603-10.08-.603h-17.621v23h18.844c2.944 0 5.012-.315 6.203-.535 2.099-.376 3.854-1.104 5.264-1.982 1.409-.876 2.568-2.205 3.478-3.881.908-1.676 1.363-3.637 1.363-5.83 0-2.568-.658-4.54-1.975-6.436-1.316-1.896-3.141-2.965-5.476-3.733zM73.282 55.087c2.317-.688 4.064-1.89 5.239-3.487 1.176-1.598 1.763-3.631 1.763-6.044 0-2.286-.549-4.314-1.646-6.054s-2.662-2.413-4.699-3.056c-2.037-.641-5.53-.446-10.48-.446h-15.459v20h16.587c4.042 0 6.939-.38 8.695-.913zM126 18.625c0-9.182-7.443-16.625-16.625-16.625h-91.75c-9.182 0-16.625 7.443-16.625 16.625v91.75c0 9.182 7.443 16.625 16.625 16.625h91.75c9.182 0 16.625-7.443 16.625-16.625v-91.75zm-35.447 66.12c-1.362 2.773-3.047 4.911-5.052 6.415-2.006 1.504-4.521 2.78-7.544 3.548-3.022.769-6.728 1.292-11.113 1.292h-27.844v-69h27.42c5.264 0 9.485.609 12.665 2.002 3.181 1.395 5.671 3.497 7.474 6.395 1.801 2.898 2.702 5.907 2.702 9.071 0 2.945-.8 5.708-2.397 8.308-1.598 2.602-4.011 4.694-7.237 6.292 4.166 1.222 7.37 3.304 9.61 6.248 2.24 2.945 3.36 6.422 3.36 10.432 0 3.227-.681 6.225-2.044 8.997z">
-                        </path>
-                    </svg>
-
+                    <img class="svg--icon" src="./images/svg/bootstrap.svg">
                 </div>
-
-                <div class="d-flex flex-column mx-auto text-center">
-                    Javascript <svg viewBox="0 0 128 128" class="svg--icon">
-                        <path fill="#1D294D"
-                            d="M1.408 1.408h125.184v125.185h-125.184z M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zm-46.885-37.793h-11.709l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
-                        </path>
-                    </svg>
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    Javascript 
+                    <img class="svg--icon" src="images/svg/javascript.svg">
                 </div>
-
-                <div class="d-flex flex-column mx-auto text-center">
-                    Symfony <svg viewBox="0 0 128 128" class="svg--icon">
-                        <path fill="#1D294D"
-                            d="M64 2.3c-34.1 0-61.7 27.6-61.7 61.7s27.6 61.7 61.7 61.7 61.7-27.6 61.7-61.7-27.6-61.7-61.7-61.7zm33.3 35.7c-2.9.1-4.8-1.6-4.9-4.2 0-1 .2-1.8.9-2.8.6-1.2.8-1.4.8-1.9-.1-1.6-2.5-1.7-3.2-1.7-9.3.3-11.7 12.8-13.7 23l-1 5.4c5.3.8 9.1-.2 11.2-1.5 3-1.9-.8-3.9-.4-6.1.5-2.2 2.5-3.3 4.1-3.4 2.3-.1 3.9 2.3 3.8 4.7-.1 3.9-5.3 9.4-15.8 9.1-1.3 0-2.4-.1-3.5-.2l-2 10.9c-1.8 8.2-4.1 19.5-12.5 29.3-7.2 8.6-14.5 9.9-17.8 10-6.1.2-10.2-3.1-10.3-7.4-.1-4.2 3.6-6.5 6-6.6 3.3-.1 5.5 2.3 5.6 5 .1 2.3-1.1 3-1.9 3.5-.5.4-1.3.9-1.3 1.8 0 .4.5 1.3 1.8 1.3 2.6-.1 4.3-1.4 5.5-2.2 6-5 8.3-13.7 11.3-29.4l.6-3.8c1-5.1 2.2-10.9 3.9-16.6-4.2-3.2-6.7-7.1-12.4-8.6-3.9-1.1-6.2-.2-7.9 1.9-2 2.5-1.3 5.7.6 7.6l3.1 3.5c3.9 4.5 6 7.9 5.2 12.6-1.1 7.3-10 13-20.5 9.8-9-2.8-10.6-9.1-9.5-12.6.9-3.1 3.4-3.7 5.8-2.9 2.6.8 3.6 3.9 2.8 6.3-.1.3-.2.7-.5 1.2-.3.7-.8 1.2-1.1 2-.6 1.9 2 3.2 3.8 3.8 4 1.2 7.9-.9 8.9-4.1.9-3-1-5.1-1.7-5.9l-3.8-4.1c-1.7-1.9-5.6-7.3-3.7-13.4.7-2.3 2.2-4.8 4.4-6.4 4.6-3.5 9.7-4 14.5-2.6 6.2 1.8 9.2 5.9 13.1 9.1 2.2-6.3 5.2-12.6 9.7-17.8 4.1-4.8 9.5-8.2 15.8-8.5 6.3-.2 11 2.6 11.2 7.1-.1 2-1.2 5.7-5 5.8z">
-                        </path>
-                    </svg>
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    Symfony  
+                    <img class="svg--icon" src="images/svg/symfony.svg">
                 </div>
-
-                <div class="d-flex flex-column mx-auto text-center">
-                    MySQl <svg viewBox="0 0 128 128" class="svg--icon svg--icon--small">
-                        <path fill="#1D294D"
-                            d="M2.001 90.458h4.108v-16.223l6.36 14.143c.75 1.712 1.777 2.317 3.792 2.317s3.003-.605 3.753-2.317l6.36-14.143v16.223h4.108v-16.196c0-1.58-.632-2.345-1.936-2.739-3.121-.974-5.215-.131-6.163 1.976l-6.241 13.958-6.043-13.959c-.909-2.106-3.042-2.949-6.163-1.976-1.304.395-1.936 1.159-1.936 2.739v16.197zM33.899 77.252h4.107v8.938c-.038.485.156 1.625 2.406 1.661 1.148.018 8.862 0 8.934 0v-10.643h4.117c.019 0-.004 14.514-.004 14.574.022 3.58-4.441 4.357-6.499 4.417h-12.972v-2.764c.022 0 12.963.003 12.995-.001 2.645-.279 2.332-1.593 2.331-2.035v-1.078h-8.731c-4.062-.037-6.65-1.81-6.683-3.85-.002-.187.089-9.129-.001-9.219zM56.63 90.458h11.812c1.383 0 2.727-.289 3.793-.789 1.777-.816 2.646-1.922 2.646-3.372v-3.002c0-1.185-.987-2.292-2.923-3.028-1.027-.396-2.292-.605-3.517-.605h-4.978c-1.659 0-2.449-.5-2.646-1.606-.039-.132-.039-.237-.039-.369v-1.87c0-.105 0-.211.039-.342.197-.843.632-1.08 2.094-1.212l.395-.026h11.733v-2.738h-11.535c-1.659 0-2.528.105-3.318.342-2.449.764-3.517 1.975-3.517 4.082v2.396c0 1.844 2.095 3.424 5.61 3.793.396.025.79.053 1.185.053h4.267c.158 0 .316 0 .435.025 1.304.105 1.856.343 2.252.816.237.237.315.475.315.737v2.397c0 .289-.197.658-.592.974-.355.316-.948.527-1.738.58l-.435.026h-11.338v2.738zM100.511 85.692c0 2.817 2.094 4.397 6.32 4.714.395.026.79.052 1.185.052h10.706v-2.738h-10.784c-2.41 0-3.318-.606-3.318-2.055v-14.168h-4.108v14.195zM77.503 85.834v-9.765c0-2.48 1.742-3.985 5.186-4.46.356-.053.753-.079 1.108-.079h7.799c.396 0 .752.026 1.147.079 3.444.475 5.187 1.979 5.187 4.46v9.765c0 2.014-.74 3.09-2.445 3.792l4.048 3.653h-4.771l-3.274-2.956-3.296.209h-4.395c-.752 0-1.543-.105-2.414-.343-2.613-.712-3.88-2.085-3.88-4.355zm4.435-.237c0 .132.039.265.079.423.237 1.135 1.307 1.768 2.929 1.768h3.732l-3.428-3.095h4.771l2.989 2.7c.552-.295.914-.743 1.041-1.32.039-.132.039-.264.039-.396v-9.368c0-.105 0-.238-.039-.37-.238-1.056-1.307-1.662-2.89-1.662h-6.216c-1.82 0-3.008.792-3.008 2.032v9.288zM122.336 66.952c-2.525-.069-4.454.166-6.104.861-.469.198-1.216.203-1.292.79.257.271.297.674.502 1.006.394.637 1.059 1.491 1.652 1.938.647.489 1.315 1.013 2.011 1.437 1.235.754 2.615 1.184 3.806 1.938.701.446 1.397 1.006 2.082 1.509.339.247.565.634 1.006.789v-.071c-.231-.294-.291-.698-.503-1.006l-.934-.934c-.913-1.212-2.071-2.275-3.304-3.159-.982-.705-3.18-1.658-3.59-2.801l-.072-.071c.696-.079 1.512-.331 2.154-.503 1.08-.29 2.045-.215 3.16-.503l1.508-.432v-.286c-.563-.578-.966-1.344-1.58-1.867-1.607-1.369-3.363-2.737-5.17-3.879-1.002-.632-2.241-1.043-3.304-1.579-.356-.181-.984-.274-1.221-.575-.559-.711-.862-1.612-1.293-2.441-.9-1.735-1.786-3.631-2.585-5.458-.544-1.245-.9-2.473-1.579-3.59-3.261-5.361-6.771-8.597-12.208-11.777-1.157-.677-2.55-.943-4.021-1.292l-2.37-.144c-.481-.201-.983-.791-1.436-1.077-1.802-1.138-6.422-3.613-7.756-.358-.842 2.054 1.26 4.058 2.011 5.099.527.73 1.203 1.548 1.58 2.369.248.54.29 1.081.503 1.652.521 1.406.976 2.937 1.651 4.236.341.658.718 1.351 1.149 1.939.264.36.718.52.789 1.077-.443.62-.469 1.584-.718 2.369-1.122 3.539-.699 7.938.934 10.557.501.805 1.681 2.529 3.303 1.867 1.419-.578 1.103-2.369 1.509-3.95.092-.357.035-.621.215-.861v.072l1.293 2.585c.957 1.541 2.654 3.15 4.093 4.237.746.563 1.334 1.538 2.298 1.867v-.073h-.071c-.188-.291-.479-.411-.719-.646-.562-.551-1.187-1.235-1.651-1.867-1.309-1.776-2.465-3.721-3.519-5.745-.503-.966-.94-2.032-1.364-3.016-.164-.379-.162-.953-.502-1.148-.466.72-1.149 1.303-1.509 2.154-.574 1.36-.648 3.019-.861 4.739l-.144.071c-1.001-.241-1.352-1.271-1.724-2.154-.94-2.233-1.115-5.83-.287-8.401.214-.666 1.181-2.761.789-3.376-.187-.613-.804-.967-1.148-1.437-.427-.579-.854-1.341-1.149-2.011-.77-1.741-1.129-3.696-1.938-5.457-.388-.842-1.042-1.693-1.58-2.441-.595-.83-1.262-1.44-1.724-2.442-.164-.356-.387-.927-.144-1.293.077-.247.188-.35.432-.431.416-.321 1.576.107 2.01.287 1.152.479 2.113.934 3.089 1.58.468.311.941.911 1.508 1.077h.646c1.011.232 2.144.071 3.088.358 1.67.508 3.166 1.297 4.524 2.155 4.139 2.614 7.522 6.334 9.838 10.772.372.715.534 1.396.861 2.154.662 1.528 1.496 3.101 2.154 4.596.657 1.491 1.298 2.996 2.227 4.237.488.652 2.374 1.002 3.231 1.364.601.254 1.585.519 2.154.861 1.087.656 2.141 1.437 3.16 2.155.509.362 2.076 1.149 2.154 1.798zM90.237 39.593c-.526-.01-.899.058-1.293.144v.071h.072c.251.517.694.849 1.005 1.293l.719 1.508.071-.071c.445-.313.648-.814.646-1.58-.179-.188-.205-.423-.359-.646-.204-.3-.602-.468-.861-.719z">
-                        </path>
-                    </svg>
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    MySQl 
+                    <img class="svg--icon--small" src="images/svg/mysql.svg">
                 </div>
             </div>
         </div>
 
-
-        <div class="test_project_div">
+        <div class="user_project">
             <h3>Projet(s) réalisé(s)</h3>
-            <div class="container_project d-flex" id="user_projects">
-                <div class="screen_project mx-auto">
+            <div class="container_project d-flex flex-wrap" id="user_projects">
+                <div class="detail_project col-12 col-md-5 col-lg-5 col-xl-3 mx-auto">
                     <img class="project_img" src="./images/screen/ideal.JPG" alt="">
                     <div class="project_info">
                         <div class="info_container">
-                            <div class="test_box">
+                            <div class="project_info_content">
                                 <div>
-                                    <h3 class="color: purple;">Nom du projet: <span>Idéal</span></h3>
+                                    <h3>Nom du projet: <span>Idéal</span></h3>
                                 </div>
                                 <div>
                                     <p>Techno: html, css, php</p>
                                 </div>
                                 <div>
-                                    <a style="color: black;" href="#">Github</a>
-                                    <a style="color: black;" href="#">Idée al</a>
+                                    <a href="#">Github</a>
+                                    <a href="#">Idée al</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="screen_project mx-auto">
+                <div class="detail_project col-12 col-md-5 col-lg-5 col-xl-3 mx-auto">
                     <img class="project_img" src="./images/screen/ideal.JPG" alt="">
                     <div class="project_info">
                         <div class="info_container">
-                            <div class="test_box">
+                            <div class="project_info_content">
                                 <div>
-                                    <h3 class="color: purple;">Nom du projet: <span>Idéal</span></h3>
+                                    <h3>Nom du projet: <span>Idéal</span></h3>
                                 </div>
                                 <div>
                                     <p>Techno: html, css, php</p>
                                 </div>
                                 <div>
-                                    <a style="color: black;" href="#">Github</a>
-                                    <a style="color: black;" href="#">Idée al</a>
+                                    <a href="#">Github</a>
+                                    <a href="#">Idée al</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="screen_project mx-auto">
-                    <img class="project_img" src="./images/screen/ideal.JPG" alt="">
+                <div class="detail_project col-12 col-md-5 col-lg-5 col-xl-3 mx-auto">
+                    <img class="project_img col-12" src="./images/screen/test.JPG" alt="">
                     <div class="project_info">
                         <div class="info_container">
-                            <div class="test_box">
+                            <div class="project_info_content">
                                 <div>
-                                    <h3 class="color: purple;">Nom du projet: <span>Idéal</span></h3>
+                                    <h3>Nom du projet: <span>Idéal</span></h3>
                                 </div>
                                 <div>
                                     <p>Techno: html, css, php</p>
                                 </div>
                                 <div>
-                                    <a style="color: black;" href="#">Github</a>
-                                    <a style="color: black;" href="#">Idée al</a>
+                                    <a href="#">Github</a>
+                                    <a href="#">Idée al</a>
                                 </div>
                             </div>
                         </div>
@@ -309,42 +271,13 @@
     <script src="./html-css-js/js/navbar.js"></script>
     <script type="text/javascript" src="./html-css-js/tiny-slider/dist/min/tiny-slider.js"></script>
     <script type="text/javascript" src="./html-css-js/js/search.js"></script>
-    <script>
-        //https://github.com/ganlanyuan/tiny-slider#options
-        var slider = tns({
-            container: '#user_projects',
-            //mode: "gallery",
-            items: 1,
-            //autoplayDirection :'backward',
-            // animateIn: "jello",
-            //  animateOut: "rollOut",
-            //speed: 10000,
-            swipeAngle: false,
-            responsive: {
-                400: {
-                    items: 1
-                },
-                760: {
-                    items: 1,
-
-                },
-                1000: {
-                    items: 1
-                }
-            },
-            autoplay: false,
-            autoplayHoverPause: false,
-            autoplayTimeout: 3000,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-        });
-    </script>
+    
     <script>
  document.addEventListener('DOMContentLoaded',function(){
         //console.log(window.innerWidth); 
         if(window.innerWidth <= 992){
             //console.log('la chatte à Myreille')
-             var divHTMLElt = document.querySelectorAll('.test_box')
+             var divHTMLElt = document.querySelectorAll('.project_info_content')
           //  console.log(divHTMLElt); 
              divHTMLElt.forEach((div)=> {
                  div.classList.remove('project_info_hide')
@@ -354,7 +287,7 @@
 })
         //if window.innerWidth     
 
-        let images = document.querySelectorAll('.screen_project');
+        let images = document.querySelectorAll('.detail_project');
         let infos = document.querySelectorAll('.project_info');
 
         images.forEach((image) => {

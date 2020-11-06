@@ -62,7 +62,7 @@
 
     </div>
     <div class="container d-flex position-relative ">
-        <aside class="filter_user aside_user  ">
+        <aside class="filter">
             <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProjectList"
                 aria-expanded="false" aria-controls="collapseProjectList">
                 Filtrer les projets
@@ -73,7 +73,7 @@
                         data-toggle="collapse">
                         <h3>Besoin de</h3>
                         <div class="align-items-center ml-3">
-                            <i class="fa fa-arrow-right arrow turnUp"></i>
+                            <i class="fa fa-arrow-right arrow arrow_right"></i>
                         </div>
                     </div>
                     <div id="filter_job" class="collapse">
@@ -87,7 +87,7 @@
                         data-toggle="collapse">
                         <h3>Technos/Outils</h3>
                         <div class="align-items-center ml-3">
-                            <i class="fa fa-arrow-right arrow turnUp"></i>
+                            <i class="fa fa-arrow-right arrow arrow_right"></i>
                         </div>
                     </div>
                     <div id="filter_techno" class="collapse">
@@ -106,7 +106,7 @@
                         data-toggle="collapse">
                         <h3>Méthode</h3>
                         <div class="align-items-center ml-3">
-                            <i class="fa fa-arrow-right arrow turnUp"></i>
+                            <i class="fa fa-arrow-right arrow arrow_right"></i>
                         </div>
                     </div>
                     <div id="filter_method" class="collapse">
@@ -119,7 +119,7 @@
                         data-toggle="collapse">
                         <h3>Sujet</h3>
                         <div class="align-items-center ml-3">
-                            <i class="fa fa-arrow-right arrow turnUp"></i>
+                            <i class="fa fa-arrow-right arrow arrow_right"></i>
                         </div>
                     </div>
                     <div id="filter_category" class="collapse">
@@ -269,13 +269,13 @@
         var arrowsTrigger = document.querySelectorAll('.arrowTrigger')
         arrowsTrigger.forEach(function (arrowTrigger) {
             arrowTrigger.addEventListener('click', function () {
-                var upClass = 'turnUp';
-                var downClass = 'turnDown';
+                var arrowRight = 'arrow_right';
+                var arrowDown = 'arrow_down';
                 var arrow = arrowTrigger.querySelector('.arrow')
-                if (~arrow.className.indexOf(downClass)) {
-                    arrow.className = arrow.className.replace(downClass, upClass);
+                if (~arrow.className.indexOf(arrowDown)) {
+                    arrow.className = arrow.className.replace(arrowDown, arrowRight);
                 } else {
-                    arrow.className = arrow.className.replace(upClass, downClass);
+                    arrow.className = arrow.className.replace(arrowRight, arrowDown);
                 }
 
             })

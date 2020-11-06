@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ideal - Homepage</title>
-
   <link rel="stylesheet" href="html-css-js/css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -16,8 +15,6 @@
   <link rel="stylesheet" href="html-css-js/css/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="html-css-js/css/fakechatbot.css" />
-
-
 </head>
 
 <body>
@@ -37,22 +34,19 @@
         </ul>
       </div>
     </div>
+
     <!-- navbar-collapse menu.// -->
     <div class="order-lg-2">
-
       <a class="navbar-brand" href="#"><img id="logo" src="html-css-js/placeholder.com-logo1.png" alt=""></a>
     </div>
-
     <div class="order-lg-3">
       <button class="navbar-toggler" type="button" data-trigger="#log">
         <span class="fa fa-user-circle-o" aria-hidden="true"></span>
       </button>
       <div class="navbar-collapse right" id="log">
-
         <div class="offcanvas-header mt-3">
           <button class="btn btn-outline-danger btn-close float-right">&times</button>
         </div>
-
         <ul class="navbar-nav nav_right">
           <li class="nav-item"> <a class="nav-link button" href="#popup"> Se connecter </a> </li>
           <li class="nav-item"><a class="nav-link" href="#"> S'inscrire</a></li>
@@ -61,23 +55,18 @@
     </div>
   </nav>
 
-
-
-
-  <!-- Modal -->
-
   <!-- header (Presentation and fake conversation) -->
   <header class="container">
     <div class="row">
       <div class="col-lg-5 fake_conv order-lg-2">
-
         <div class="container animed_conv">
           <div class="card card-inverse card-primary">
             <div class="card-block">
               <blockquote class="card-blockquote">
                 <div id="chatbot">
                   <div class="fakechatbot-message perso_1" data-pause="1000"><strong><i class="fa fa-user"></i>
-                      AdrienM:</strong> Hey salut, j'ai vu que tu avais besoin d'un développeur React pour ton projet, c'est toujours le cas?</div>
+                      AdrienM:</strong> Hey salut, j'ai vu que tu avais besoin d'un développeur React pour ton projet,
+                    c'est toujours le cas?</div>
                   <div class="fakechatbot-message  perso_2" data-pause="2000"><strong><i class="fa fa-user"></i>
                       Samus:</strong> Salut Adrien, oui c'est toujours le cas ! Partant pour rejoindre l'équipe?</div>
                   <div class="fakechatbot-message  perso_1" data-pause="1500"><strong><i class="fa fa-user"></i>
@@ -87,7 +76,6 @@
                   <div class="fakechatbot-typing ">Typing ...</div>
                 </div>
               </blockquote>
-
               <button class="restart-btn">Restart animation</button>
             </div>
           </div>
@@ -95,7 +83,6 @@
       </div>
       <div class="col-lg-7 presentation order-lg-1 d-flex flex-column p-3 justify-content-lg-center">
         <h2 class="text-center align-top my-3">Lorem ipsum </h2>
-
         <p class="text-center my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugit error id
           beatae nisi nulla iusto laboriosam dolorum perferendis vel!</p>
         <div class="d-flex justify-content-center my-3">
@@ -109,21 +96,18 @@
 
   <!-- User  -->
   <section class="container section-users">
-
     <h3 class="text-center py-5">
       Nos derniers inscrits
     </h3>
-
     <div id="users">
-
       <figure>
-        <img class="scaled users_pic  img-rounded" src="https://via.placeholder.com/300/0000FF/808080" alt="Eiffel tower">
+        <img class="scaled users_pic  img-rounded" src="https://via.placeholder.com/300/0000FF/808080"
+          alt="Eiffel tower">
         <figcaption>
           <h6>Name 1</h6>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
         </figcaption>
       </figure>
-
       <figure>
         <img class="scaled users_pic img-rounded" src="./html-css-js/alan-bean.jpg" alt="username :">
         <figcaption>
@@ -155,14 +139,10 @@
     </div>
   </section>
 
-
   <!-- Projects  -->
   <section class="container section-projects">
-
     <h3 class="text-center py-5">New projects</h3>
-
     <div id="projects">
-
       <figure>
         <img class="scaled projects_pic" src="https://via.placeholder.com/300/0000FF/808080" alt="Eiffel tower">
         <figcaption>
@@ -170,7 +150,6 @@
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, iste.</p>
         </figcaption>
       </figure>
-
       <figure>
         <img class="scaled projects_pic" src="./html-css-js/alan-bean.jpg" alt="username :">
         <figcaption>
@@ -200,38 +179,37 @@
         </figcaption>
       </figure>
     </div>
-
   </section>
-  <!-- modal signin -->
-    <div class="popup" id="popup">
-      <div class="popup-inner">
-        <div class="popup__photo">
-          <img
-            src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80"
-            alt="">
-        </div>
-        <div class="popup__text">
 
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn_modal btn-primary">Submit</button>
-          </form>
-        </div>
-        <a class="popup__close" href="#">X</a>
+  <!-- modal signin -->
+  <div class="popup" id="popup">
+    <div class="popup-inner">
+      <div class="popup__photo">
+        <img
+          src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80"
+          alt="">
       </div>
+      <div class="popup__text">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn_modal btn-primary">Submit</button>
+        </form>
+      </div>
+      <a class="popup__close" href="#">X</a>
     </div>
+  </div>
 
   <!-- footer -->
   <footer class="container d-flex justify-content-between pt-3">
@@ -245,8 +223,7 @@
       <li>CGU</li>
     </ul>
   </footer>
-</body>
-  
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -266,8 +243,6 @@
     $('#chatbot').restartChat();
   });
 </script>
-
-
 
 <script>
   //https://github.com/ganlanyuan/tiny-slider#options
@@ -329,8 +304,5 @@
     mouseDrag: true,
   });
 </script>
-
-
-
-
+</body>
 </html>
