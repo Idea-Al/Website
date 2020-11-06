@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal - Idéaliseur</title>
+
+    <link rel="stylesheet" href="/html-css-js/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/html-css-js/css/style.css">
+    <link rel="stylesheet" href="/html-css-js/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between fixed-top stroke">
+        <div class="order-lg-1">
+            <button class="navbar-toggler" type="button" data-trigger="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse left" id="menu">
+                <div class="offcanvas-header mt-3">
+                    <button class="btn btn-outline-danger btn-close float-right">&times</button>
+                </div>
+                <ul class="navbar-nav nav_left">
+                    <li class="nav-item"> <a class="nav-link" href="user_list.html"> Idealiseurs </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="project_list.html"> Projets</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar-collapse menu.// -->
+        <div class="order-lg-2">
+
+            <a class="navbar-brand" href="index.html"><img id="logo" src="html-css-js/placeholder.com-logo1.png"
+                    alt=""></a>
+        </div>
+
+        <div class="order-lg-3">
+            <button class="navbar-toggler" type="button" data-trigger="#log">
+                <span class="fa fa-user-circle-o" aria-hidden="true"></span>
+            </button>
+            <div class="navbar-collapse right" id="log">
+
+                <div class="offcanvas-header mt-3">
+                    <button class="btn btn-outline-danger btn-close float-right">&times</button>
+                </div>
+
+                <ul class="navbar-nav nav_right">
+                    <li class="nav-item"> <a class="nav-link button" href="#popup"> Se connecter </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> S'inscrire</a></li>
+                </ul>
+            </div> <!-- navbar-collapse.// -->
+        </div>
+    </nav>
+
+    <div class="top_div">
+
+    </div>
+    <div class="container d-flex position-relative ">
+        <aside class="filter">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseProjectList"
+                aria-expanded="false" aria-controls="collapseProjectList">
+                Filtrer les projets
+            </button>
+            <div class="collapse" id="collapseProjectList">
+                <div class="filter_item">
+                    <div class="d-flex arrowTrigger collapsed justify-content-between" data-target="#filter_job"
+                        data-toggle="collapse">
+                        <h3>Besoin de</h3>
+                        <div class="align-items-center ml-3">
+                            <i class="fa fa-arrow-right arrow arrow_right"></i>
+                        </div>
+                    </div>
+                    <div id="filter_job" class="collapse">
+                        <div><input type="checkbox" name="job" value="developer" id="developer"><label
+                                for="developer">Web
+                                développeur</label></div>
+                        <div><input type="checkbox" name="job" value="designer" id="designer"><label for="designer">Web
+                                designer</label></div>
+                    </div>
+                    <div class="d-flex arrowTrigger collapsed justify-content-between" data-target="#filter_techno"
+                        data-toggle="collapse">
+                        <h3>Technos/Outils</h3>
+                        <div class="align-items-center ml-3">
+                            <i class="fa fa-arrow-right arrow arrow_right"></i>
+                        </div>
+                    </div>
+                    <div id="filter_techno" class="collapse">
+                        <div><input type="checkbox" name="techno" value="php" id="php"><label for="php">Php</label>
+                        </div>
+                        <div><input type="checkbox" name="techno" value="react" id="react"><label
+                                for="react">React</label></div>
+                        <div><input type="checkbox" name="techno" value="symfony" id="symfony"><label
+                                for="symfont">Symfony</label>
+                        </div>
+                        <div><input type="checkbox" name="techno" value="photoshop" id="photoshop"><label
+                                for="photoshop">Photoshop</label>
+                        </div>
+                    </div>
+                    <div class="d-flex arrowTrigger collapsed justify-content-between" data-target="#filter_method"
+                        data-toggle="collapse">
+                        <h3>Méthode</h3>
+                        <div class="align-items-center ml-3">
+                            <i class="fa fa-arrow-right arrow arrow_right"></i>
+                        </div>
+                    </div>
+                    <div id="filter_method" class="collapse">
+                        <div><input type="checkbox" name="method" value="agile" id="agile"><label
+                                for="agile">Agile</label></div>
+                        <div><input type="checkbox" name="method" value="scrum" id="scrum"><label
+                                for="scrum">Scrum</label></div>
+                    </div>
+                    <div class="d-flex arrowTrigger collapsed justify-content-between" data-target="#filter_category"
+                        data-toggle="collapse">
+                        <h3>Sujet</h3>
+                        <div class="align-items-center ml-3">
+                            <i class="fa fa-arrow-right arrow arrow_right"></i>
+                        </div>
+                    </div>
+                    <div id="filter_category" class="collapse">
+                        <div><input type="checkbox" name="categorie" value="divertissement" id="divertissement"><label
+                                for="divertissement">Divertissement</label></div>
+                        <div><input type="checkbox" name="categorie" value="education" id="education"><label
+                                for="education">Education</label></div>
+                        <div><input type="checkbox" name="categorie" value="sport" id="sport"><label
+                                for="sport">Sport</label>
+                        </div>
+                    </div>
+                </div>
+        </aside>
+        <main class="user_container">
+            <section class="user_list">
+                <div class="card ml-3 mb-4 user developer php" style="width: 19rem;">
+                    <div class="mx-auto">
+                        <img class="users img-rounded mx-auto d-flex mt-2" src="images/dd.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">PHP example text to build on the card title and make up the bulk of the
+                            card's
+                            content.</p>
+                    </div>
+                </div>
+
+                <div class="card ml-3 mb-4 user developer react" style="width: 19rem;">
+                    <div class="mx-auto">
+                        <img class="users img-rounded mx-auto d-flex mt-2" src="images/dd.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">REACT EXAMPLE text to build on the card title and make up the bulk of the
+                            card's
+                            content.</p>
+                    </div>
+                </div>
+
+                <div class="card ml-3 mb-4 user designer photoshop" style="width: 19rem;">
+                    <div class="mx-auto">
+                        <img class="users img-rounded mx-auto d-flex mt-2" src="images/dd.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">DESIGNER EXAMPLE example text to build on the card title and make up the
+                            bulk of the
+                            card's
+                            content.</p>
+                    </div>
+                </div>
+                <div class="card ml-3 mb-4 user developer react" style="width: 19rem;">
+                    <div class="mx-auto">
+                        <img class="users img-rounded mx-auto d-flex mt-2" src="images/dd.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">React EXAMPLE text to build on the card title and make up the bulk of the
+                            card's
+                            content.</p>
+
+                    </div>
+                </div>
+
+                <div class="card ml-3 mb-4 user designer photoshop" style="width: 19rem;">
+                    <div class="mx-auto">
+                        <img class="users img-rounded mx-auto d-flex mt-2" src="images/dd.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">DESIGNER EXAMPLE text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                    </div>
+                </div>
+
+                <div class="card ml-3 mb-4 user developer symfony" style="width: 19rem;">
+                    <div class="mx-auto">
+                        <img class="users img-rounded mx-auto d-flex mt-2" src="images/dd.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Symfony EXAMPLE text to build on the card title and make up the bulk of the
+                            card's
+                            content.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-inner">
+            <div class="popup__photo">
+                <img src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80"
+                    alt="">
+            </div>
+            <div class="popup__text">
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <a class="popup__close" href="#">X</a>
+        </div>
+    </div>
+
+    <footer class="container d-flex justify-content-between">
+        <ul class="footer">
+            <li>Nous contacter</li>
+            <li>Qui sommes nous ?</li>
+            <li>Notre mission</li>
+        </ul>
+        <ul>
+            <li>Mentions légales</li>
+            <li>CGU</li>
+        </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+    <script src="./html-css-js/js/navbar.js"></script>
+    <script src="./html-css-js/js/user_filter.js"></script>
+
+    <script>
+        var arrowsTrigger = document.querySelectorAll('.arrowTrigger')
+        arrowsTrigger.forEach(function (arrowTrigger) {
+            arrowTrigger.addEventListener('click', function () {
+                var arrowRight = 'arrow_right';
+                var arrowDown = 'arrow_down';
+                var arrow = arrowTrigger.querySelector('.arrow')
+                if (~arrow.className.indexOf(arrowDown)) {
+                    arrow.className = arrow.className.replace(arrowDown, arrowRight);
+                } else {
+                    arrow.className = arrow.className.replace(arrowRight, arrowDown);
+                }
+
+            })
+        });
+    </script>
+</body>
+
+
+</html>

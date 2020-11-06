@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal - Homepage</title>
+
+    <link rel="stylesheet" href="html-css-js/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="html-css-js/tiny-slider/dist/tiny-slider.css">
+    <link rel="stylesheet" href="html-css-js/css/style.css">
+    <link rel="stylesheet" href="html-css-js/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="html-css-js/css/fakechatbot.css" />
+
+
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between fixed-top stroke">
+        <div class="order-lg-1">
+            <button class="navbar-toggler" type="button" data-trigger="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse left" id="menu">
+                <div class="offcanvas-header mt-3">
+                    <button class="btn btn-outline-danger btn-close float-right">&times</button>
+                </div>
+                <ul class="navbar-nav nav_left">
+                    <li class="nav-item"> <a class="nav-link" href="user_list.html"> Idealiseurs </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="project_list.html"> Projets</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar-collapse menu.// -->
+        <div class="order-lg-2">
+
+            <a class="navbar-brand" href="#"><img id="logo" src="html-css-js/placeholder.com-logo1.png" alt=""></a>
+        </div>
+
+        <div class="order-lg-3">
+            <button class="navbar-toggler" type="button" data-trigger="#log">
+                <span class="fa fa-user-circle-o" aria-hidden="true"></span>
+            </button>
+            <div class="navbar-collapse right" id="log">
+
+                <div class="offcanvas-header mt-3">
+                    <button class="btn btn-outline-danger btn-close float-right">&times</button>
+                </div>
+
+                <ul class="navbar-nav nav_right">
+                    <li class="nav-item"> <a class="nav-link button" href="#popup"> Se connecter </a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> S'inscrire</a></li>
+                </ul>
+            </div> <!-- navbar-collapse.// -->
+        </div>
+    </nav>
+
+    <div class="container p-0">
+        <div class="col-12 mx-auto pb-3 user_background">
+            <div class="d-flex">
+                <div class="mx-auto">
+                    <div class="mx-auto d-flex user_avatar_container">
+                        <img class="user_avatar" src="./images/kira.png">
+                        <div class="user_status dispo">
+                        </div>
+                    </div>
+                    <div class="col-12 mx-auto text-center pt-2">
+                        <h3>UnIdiotEncore</h3>
+                        <p>Développeur, backend</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex col-md-8 col-12 mx-auto text-center user_interaction">
+                <div class="col-1"></div>
+                <a class="col-5 col-md-4 mx-auto" href="">
+                    <div class="action_button">
+                        <div>Ajouter</div>
+                        <!-- <div><i class="fa fa-user-plus" aria-hidden="true"></i></a></div> -->
+                    </div>
+                </a>
+                <a class="col-5 col-md-4 mx-auto" href="">
+                    <div class="action_button">
+                        <div>Contacter</div>
+                        <!-- <div><i class="fa fa-user-plus" aria-hidden="true"></i></a></div> -->
+                    </div>
+                </a>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Social information / count of realization -->
+    <div>
+        <div class="d-flex justify-content-around w-100 text-center">
+            <div class="baloon d-flex">
+                <p class="align-self-center mx-auto">Like <br>reçu <br>5</p>
+            </div>
+            <div class="baloon d-flex">
+                <p class=" align-self-center mx-auto">Amis <br>5</p>
+            </div>
+        </div>
+        <div class="baloon baloon_big d-flex">
+            <p class="align-self-center mx-auto">Projet réalisé</p>
+        </div>
+    </div>
+    <!-- end of social information / count-->
+    <div class="d-flex flex-column mx-3">
+        <div class="user_about_me">
+            <h2>Description</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reiciendis pariatur, accusantium iusto saepe
+                quis nesciunt eum esse velit dolor odio recusandae quo optio quae necessitatibus nulla maxime ex neque.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam vel dolores illum unde quaerat, officiis
+                quos. Vitae mollitia aut, asperiores labore consequatur enim ea quam. Facilis quibusdam ut ad nemo!
+            </p>
+        </div>
+        <div class="user_tools">
+            <h2 class="text-center">Technos/outils</h2>
+            <div class="d-flex flex-wrap justify-content-center ">
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    HTML
+                    <img class="svg--icon" src="images/svg/html.svg">
+                </div>
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    PHP
+                   <img class="svg--icon--small" src="images/svg/php.svg">
+                </div>
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    Bootstrap
+                    <img class="svg--icon" src="./images/svg/bootstrap.svg">
+                </div>
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    Javascript 
+                    <img class="svg--icon" src="images/svg/javascript.svg">
+                </div>
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    Symfony  
+                    <img class="svg--icon" src="images/svg/symfony.svg">
+                </div>
+                <div class="d-flex flex-column mx-auto text-center col-md-2 col-sm-4 col-4 mb-3">
+                    MySQl 
+                    <img class="svg--icon--small" src="images/svg/mysql.svg">
+                </div>
+            </div>
+        </div>
+
+        <div class="user_project">
+            <h3>Projet(s) réalisé(s)</h3>
+            <div class="container_project d-flex flex-wrap" id="user_projects">
+                <div class="detail_project col-12 col-md-5 col-lg-5 col-xl-3 mx-auto">
+                    <img class="project_img" src="./images/screen/ideal.JPG" alt="">
+                    <div class="project_info">
+                        <div class="info_container">
+                            <div class="project_info_content">
+                                <div>
+                                    <h3>Nom du projet: <span>Idéal</span></h3>
+                                </div>
+                                <div>
+                                    <p>Techno: html, css, php</p>
+                                </div>
+                                <div>
+                                    <a href="#">Github</a>
+                                    <a href="#">Idée al</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail_project col-12 col-md-5 col-lg-5 col-xl-3 mx-auto">
+                    <img class="project_img" src="./images/screen/ideal.JPG" alt="">
+                    <div class="project_info">
+                        <div class="info_container">
+                            <div class="project_info_content">
+                                <div>
+                                    <h3>Nom du projet: <span>Idéal</span></h3>
+                                </div>
+                                <div>
+                                    <p>Techno: html, css, php</p>
+                                </div>
+                                <div>
+                                    <a href="#">Github</a>
+                                    <a href="#">Idée al</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail_project col-12 col-md-5 col-lg-5 col-xl-3 mx-auto">
+                    <img class="project_img col-12" src="./images/screen/test.JPG" alt="">
+                    <div class="project_info">
+                        <div class="info_container">
+                            <div class="project_info_content">
+                                <div>
+                                    <h3>Nom du projet: <span>Idéal</span></h3>
+                                </div>
+                                <div>
+                                    <p>Techno: html, css, php</p>
+                                </div>
+                                <div>
+                                    <a href="#">Github</a>
+                                    <a href="#">Idée al</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal signin -->
+    <div class="popup" id="popup">
+        <div class="popup-inner">
+            <div class="popup__photo">
+                <img src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80"
+                    alt="">
+            </div>
+            <form class="popup__text">
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="current-password">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn_modal btn-primary">Submit</button>
+                </form>
+            </div>
+            <a class="popup__close" href="#">X</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container d-flex justify-content-between pt-3">
+        <ul class="footer">
+            <li>Nous contacter</li>
+            <li>Qui sommes nous ?</li>
+            <li>Notre mission</li>
+        </ul>
+        <ul>
+            <li>Mentions légales</li>
+            <li>CGU</li>
+        </ul>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="./html-css-js/js/fakechatbot.js"></script>
+    <script src="./html-css-js/js/navbar.js"></script>
+    <script type="text/javascript" src="./html-css-js/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script type="text/javascript" src="./html-css-js/js/search.js"></script>
+    
+    <script>
+ document.addEventListener('DOMContentLoaded',function(){
+        //console.log(window.innerWidth); 
+        if(window.innerWidth <= 992){
+            //console.log('la chatte à Myreille')
+             var divHTMLElt = document.querySelectorAll('.project_info_content')
+          //  console.log(divHTMLElt); 
+             divHTMLElt.forEach((div)=> {
+                 div.classList.remove('project_info_hide')
+               //  console.log('la')
+             })
+        }
+})
+        //if window.innerWidth     
+
+        let images = document.querySelectorAll('.detail_project');
+        let infos = document.querySelectorAll('.project_info');
+
+        images.forEach((image) => {
+            infos.forEach((info) => {
+
+                console.log(window.innerWidth); 
+
+                image.addEventListener('mouseover', function (evt) {
+                    info = evt.currentTarget.querySelector('.project_info');
+
+                    if (info.classList.contains('project_info_hide') && window.innerWidth >= 992) {
+                        info.classList.remove('project_info_hide')
+                    }
+                    info.classList.add("show_project_info");
+                });
+                image.addEventListener('mouseout', function () {
+                    if (info.classList.contains('show_project_info') && window.innerWidth >= 992) {
+                        info.classList.remove('show_project_info')
+                        info.classList.add('project_info_hide')
+
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
